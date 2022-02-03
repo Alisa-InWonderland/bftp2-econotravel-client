@@ -1,10 +1,10 @@
 import React from "react";
+import {BottomNavBar} from "./BottomNavBar";
 
 export const Footer = () => {
     return (
         <footer className="footer">
-            <h2>Footer</h2>
-
+            <BottomNavBar/>
         </footer>
     );
 };

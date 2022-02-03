@@ -1,5 +1,6 @@
 import React from "react";
 import {useEffect, useState} from "react";
+import { ExperienceCatalog } from './ExperienceCatalog'
 
 export function NewExperienceForm() {
 
@@ -35,10 +36,8 @@ export function NewExperienceForm() {
                 <input onChange={e => setNewExperience(e.target.value)} type="text"/>
                 <button onClick={() => addExperience(newExperience)}>Add experience</button>
             </div>
+            <ExperienceCatalog/>
 
-            <ul>
-                {experiences.map(experience => <li>{experience.name}</li>)}
-            </ul>
         </main>
     );
 }
