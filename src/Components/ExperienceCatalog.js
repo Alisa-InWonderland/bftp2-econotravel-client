@@ -6,7 +6,6 @@ import Montseny from '../assets/Montseny.png';
     export function ExperienceCatalog() {
 
         const [experiences, setExperiences] = useState([]);
-
         const [requiresUpdate, setRequiresUpdate] = useState(true);
 
 
@@ -19,6 +18,14 @@ import Montseny from '../assets/Montseny.png';
             }
         }, [requiresUpdate])
 
+        const deleteExperience = () => {
+            fetch("http://localhost:8080/api/experiences/{id}",
+                {
+                    method: 'DELETE',
+                }
+            ).then(_ => setRequiresUpdate(true))
+
+        }
 
         return (
             <div className='experienceCatalog'>
@@ -29,27 +36,30 @@ import Montseny from '../assets/Montseny.png';
 
                     {experiences.map(experience =>
 
-                    <div className="game-card">
+                    <div className="experience-card">
                             <div>
                                 <img className="image" src={Montseny} alt="viaje" />
                             </div>
 
-                            <table className="games-table">
+                            <table className="experience-table">
                                 <tbody>
 
                                     <tr>
                                         <td>{experience.name}</td>
-                                        <td>Price</td>
+                                        <td>{experience.price}{'€'}</td>
                                     </tr>
 
                                     <tr className='duration'>
-                                        <td>2 días</td>
+                                        <td>{experience.duration}</td>
                                     </tr>
 
 
                                     <tr className='btn-orange'>
                                         <td>
-                                        <a className="btn-orange-link" href="#">Reservar</a>
+                                        <a className="btn-orange-link" href="#">Editar</a>
+                                        </td>
+                                        <td>
+                                            <a className="btn-orange-link" onClick={() => deleteExperience(experience.id)}>Borrar</a>
                                         </td>
                                     </tr>
 
