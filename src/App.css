@@ -155,7 +155,9 @@ tbody {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.experienceId {
+  display: none;
+}
 
 /************FOOTER**********************/
 .footer {

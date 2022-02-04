@@ -18,10 +18,10 @@ import Montseny from '../assets/Montseny.png';
             }
         }, [requiresUpdate])
 
-        const deleteExperience = () => {
-            fetch("http://localhost:8080/api/experiences/{id}",
+        const deleteExperience = (id) => {
+            fetch(`http://localhost:8080/api/experiences/delete/${id}`,
                 {
-                    method: 'DELETE',
+                    method: 'DELETE'
                 }
             ).then(_ => setRequiresUpdate(true))
 
