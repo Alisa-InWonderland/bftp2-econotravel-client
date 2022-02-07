@@ -1,7 +1,7 @@
 import React, {Fragment, useState, useEffect} from 'react';
 
 
-export const ExperienceForm = () => {
+export const ExperienceForm = (props) => {
 
     const [datos, setDatos] = useState({
         name: '',
@@ -20,27 +20,9 @@ export const ExperienceForm = () => {
     }
     const enviarDatos = (event) => {
         event.preventDefault()
+        props.onSubmit(datos)
         console.log(datos.name + ' ' + datos.description + ' ' + datos.price + ' ' + datos.duration + ' ' + datos.accessibility + ' ' + datos.tags + ' ')
     }
-    // useEffect(() => {
-    //     if (requiresUpdate) {
-    //         fetch("http://localhost:8080/api/experiences")
-    //             .then(r => r.json())
-    //             .then(setExperience)
-    //             .then(_ => setRequiresUpdate(false));
-    //     }
-    // }, [requiresUpdate])
-    //
-    // const addExperience = (experienceName, experienceDescription, experiencePrice, experienceDuration, experienceAccessibility, experienceTags) => {
-    //     fetch("http://localhost:8080/api/experiences",
-    //         {
-    //             method: 'POST',
-    //             headers: {'Content-Type': 'application/json'},
-    //             body: JSON.stringify({name: experienceName, description: experienceDescription, price: experiencePrice, duration: experienceDuration, accessibility: experienceAccessibility, tags: experienceTags})
-    //         }
-    //     ).then(_ => setRequiresUpdate(true))
-    //
-    // }
 
 
     return (
@@ -53,7 +35,6 @@ export const ExperienceForm = () => {
                            placeholder="Título"
                            className="form-control"
                            onChange={handleInputChange}
-                           value={datos}
                            name="name"/>
                 </div>
 
@@ -62,7 +43,6 @@ export const ExperienceForm = () => {
                            placeholder="Descripción"
                            className="form-control"
                            onChange={handleInputChange}
-                           value={datos}
                            name="description"/>
                 </div>
 
@@ -71,7 +51,7 @@ export const ExperienceForm = () => {
                            placeholder="Precio p/p"
                            className="form-control"
                            onChange={handleInputChange}
-                           value={datos}
+
                            name="price"/>
                 </div>
 
@@ -80,7 +60,7 @@ export const ExperienceForm = () => {
                            placeholder="Duración"
                            className="form-control"
                            onChange={handleInputChange}
-                           value={datos}
+
                            name="duration"/>
                 </div>
 
@@ -89,7 +69,7 @@ export const ExperienceForm = () => {
                            placeholder="Accesibilidad"
                            className="form-control"
                            onChange={handleInputChange}
-                           value={datos}
+
                            name="accessibility"/>
                 </div>
 
@@ -98,7 +78,7 @@ export const ExperienceForm = () => {
                            placeholder="Etiquetas"
                            className="form-control"
                            onChange={handleInputChange}
-                           value={datos}
+
                            name="tags"/>
                 </div>
 
