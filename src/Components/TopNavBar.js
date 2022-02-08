@@ -1,12 +1,12 @@
 import React from "react";
-import logoEconotravel from '../assets/logoEconotravel.png';
+import logoEconotravel from '../assets/logoEconotravel1.png';
 
 export const TopNavBar = () => {
     return (
         <nav className="topNavBar">
             <div className="topNavBar-brand">
                 <a href="#">
-                    <img className={"logoImg"} src={logoEconotravel} alt={"Econotravel logo"}/>
+                    <img className="logoImg" src={logoEconotravel} alt={"Econotravel logo"}/>
                 </a>
             </div>
             <ul className="topNavBar-links">
@@ -18,6 +18,10 @@ export const TopNavBar = () => {
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">Contactos</a>
+                </li>
+
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Añadir experiencia</a>
                 </li>
 
                 <li className="nav-item">

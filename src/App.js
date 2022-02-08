@@ -35,8 +35,10 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <ExperienceCatalog/>
-            <ExperienceForm onSubmit={e => addExperience(e)}/>
+            <main>
+                <ExperienceCatalog/>
+                <ExperienceForm onSubmit={e => addExperience(e)}/>
+            </main>
             <Footer/>
         </div>
     );
