@@ -17,7 +17,7 @@ export const Header = () => {
 
             <div className="titles">
                 <h6>Los mejores destinos de Cataluña</h6>
-                <h1>Viaja, disfruta<br/>
+                <h1>Viaja, <span className="title-decore">disfruta</span><br/>
                     y vive nuevas<br/>
                     experiencias</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur<br/>

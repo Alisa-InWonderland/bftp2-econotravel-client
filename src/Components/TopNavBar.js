@@ -16,7 +16,18 @@ export const TopNavBar = () => {
             <Link to="/about">Quienes somos</Link>
             <Link to="/contacto">Contacto</Link>
 
+
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Añadir experiencia</a>
+                </li>
+
+                <li className="nav-item">
+                    <a className="nav-link login" href="#">Log in</a>
+                </li>
+            </ul>
+
             <Link to="/add">Añadir Experiencia</Link>
+
 
             <Link to="/login">Log in</Link>
         </nav>

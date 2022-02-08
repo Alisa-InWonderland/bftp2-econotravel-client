@@ -1,6 +1,6 @@
 import React from "react";
 import {useEffect, useState} from "react";
-import Montseny from '../assets/Montseny.png';
+
 
 
 export function ExperienceCatalog() {
@@ -31,6 +31,7 @@ export function ExperienceCatalog() {
     return (
         <div className='experienceCatalog'>
 
+
             <h1 className="catalog-title">Nuestras experiencias</h1>
 
             <div className="container-card">
@@ -39,7 +40,7 @@ export function ExperienceCatalog() {
 
                     <div className="experience-card">
                         <div>
-                            <img className="image" src={Montseny} alt="viaje"/>
+                            <img src={experience.image} className="image"></img>
                         </div>
 
                         <table className="experience-table">
@@ -54,6 +55,15 @@ export function ExperienceCatalog() {
                                 <td>{experience.duration}</td>
                             </tr>
 
+
+                                        <tr className='btn-card-container'>
+                                            <td>
+                                                <button className="btn-orange editar"><a className="btn-orange-link" href="#">Editar</a></button>
+                                            </td>
+                                            <td>
+                                                <button className="btn-orange borrar"><a className="btn-orange-link" onClick={() => deleteExperience(experience.id)}>Borrar</a></button>
+                                            </td>
+                                        </tr>
 
                             <tr className='btn-orange'>
                                 <td>
@@ -73,11 +83,4 @@ export function ExperienceCatalog() {
         </div>
     );
 }
-
-
-
-
-
-
-
 
