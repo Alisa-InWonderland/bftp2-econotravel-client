@@ -3,7 +3,7 @@ import  { Header } from './Components/Header'
 import  { Footer } from './Components/Footer'
 import {ExperienceCatalog} from "./Components/ExperienceCatalog";
 import {ExperienceForm} from "./Components/ExperienceForm";
-import {useEffect, useState} from "react";
+import {useEffect, useState, Component} from "react";
 
 function App() {
 
