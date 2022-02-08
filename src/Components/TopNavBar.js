@@ -1,5 +1,6 @@
 import React from "react";
 import logoEconotravel from '../assets/logoEconotravel1.png';
+import {Link} from "react-router-dom";
 
 export const TopNavBar = () => {
     return (
@@ -9,26 +10,13 @@ export const TopNavBar = () => {
                     <img className="logoImg" src={logoEconotravel} alt={"Econotravel logo"}/>
                 </a>
             </div>
-            <ul className="topNavBar-links">
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Reserva</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Quiénes somos</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Contactos</a>
-                </li>
+            <Link to="/reserva">Reserva</Link>
+            <Link to="/about">Quienes somos</Link>
+            <Link to="/contacto">Contacto</Link>
 
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Añadir experiencia</a>
-                </li>
+            <Link to="/add">Añadir Experiencia</Link>
 
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Log in</a>
-                </li>
-            </ul>
-
+            <Link to="/login">Log in</Link>
         </nav>
     );
 }
