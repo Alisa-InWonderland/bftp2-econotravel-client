@@ -38,7 +38,8 @@ function App() {
         <div className="App">
                 <Header/>
             <Routes>
-                <Route path="/about" element={<About About={About}/>}/>
+                <Route path="/home" element={<ExperienceCatalog ExperienceCatalog={ExperienceCatalog} />} />
+                <Route path="/about" element={<About About={About} />} />
             </Routes>
 
             <main>
