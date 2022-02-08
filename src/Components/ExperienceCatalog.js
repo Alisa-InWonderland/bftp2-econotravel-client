@@ -1,6 +1,6 @@
 import React from "react";
 import {useEffect, useState} from "react";
-import Montseny from '../assets/Montseny.png';
+
 
 
 export function ExperienceCatalog() {
@@ -40,7 +40,7 @@ export function ExperienceCatalog() {
 
                     <div className="experience-card">
                         <div>
-                            <img className="image" src={Montseny} alt="viaje"/>
+                            <img src={experience.image} className="image"></img>
                         </div>
 
                         <table className="experience-table">
