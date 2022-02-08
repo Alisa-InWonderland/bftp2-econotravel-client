@@ -1,5 +1,7 @@
 import React from "react";
 import twitter from "../assets/twitter.png";
+import instagram from "../assets/instagram.png";
+import facebook from "../assets/facebook.png";
 
 
 export const BottomNavBar = () => {
@@ -26,15 +28,15 @@ export const BottomNavBar = () => {
 
                 <div className="social">
                     <a href="#">
-                        <img className={"icono-rs"} src={twitter} alt={"Econotravel logo"}/>
+                        <img className={"icono-rs"} src={twitter} alt={"Twitter logo"}/>
                     </a>
 
                     <a href="#">
-                        <img className={"icono-rs"} src={twitter} alt={"Econotravel logo"}/>
+                        <img className={"icono-rs"} src={instagram} alt={"Econotravel logo"}/>
                     </a>
 
                     <a href="#">
-                        <img className={"icono-rs"} src={twitter} alt={"Econotravel logo"}/>
+                        <img className={"icono-rs"} src={facebook} alt={"Econotravel logo"}/>
                     </a>
                 </div>
 

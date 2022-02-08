@@ -28,47 +28,49 @@ import Montseny from '../assets/Montseny.png';
         }
 
         return (
-            <div className='experienceCatalog'>
+            <main className="main">
+                <div className='experienceCatalog'>
 
-                <h1 className="catalog-title">Nuestras experiencias</h1>
+                    <h1 className="catalog-title">Nuestras experiencias</h1>
 
-                <div className="container-card">
+                    <div className="container-card">
 
-                    {experiences.map(experience =>
+                        {experiences.map(experience =>
 
-                    <div className="experience-card">
-                            <div>
-                                <img className="image" src={Montseny} alt="viaje" />
-                            </div>
+                        <div className="experience-card">
+                                <div>
+                                    <img className="image" src={Montseny} alt="viaje" />
+                                </div>
 
-                            <table className="experience-table">
-                                <tbody>
+                                <table className="experience-table">
+                                    <tbody>
 
-                                    <tr>
-                                        <td>{experience.name}</td>
-                                        <td>{experience.price}{'€'}</td>
-                                    </tr>
+                                        <tr>
+                                            <td>{experience.name}</td>
+                                            <td>{experience.price}{'€'}</td>
+                                        </tr>
 
-                                    <tr className='duration'>
-                                        <td>{experience.duration}</td>
-                                    </tr>
+                                        <tr className='duration'>
+                                            <td>{experience.duration}</td>
+                                        </tr>
 
 
-                                    <tr className='btn-orange'>
-                                        <td>
-                                        <a className="btn-orange-link" href="#">Editar</a>
-                                        </td>
-                                        <td>
-                                            <a className="btn-orange-link" onClick={() => deleteExperience(experience.id)}>Borrar</a>
-                                        </td>
-                                    </tr>
+                                        <tr className='btn-orange'>
+                                            <td>
+                                            <a className="btn-orange-link" href="#">Editar</a>
+                                            </td>
+                                            <td>
+                                                <a className="btn-orange-link" onClick={() => deleteExperience(experience.id)}>Borrar</a>
+                                            </td>
+                                        </tr>
 
-                                </tbody>
-                            </table>
-                        </div>)}
+                                    </tbody>
+                                </table>
+                            </div>)}
 
+                    </div>
                 </div>
-            </div>
+            </main>
         );
     }
 
