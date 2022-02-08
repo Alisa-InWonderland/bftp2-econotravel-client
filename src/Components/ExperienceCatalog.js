@@ -28,7 +28,7 @@ import Montseny from '../assets/Montseny.png';
         }
 
         return (
-            <main className="main">
+
                 <div className='experienceCatalog'>
 
                     <h1 className="catalog-title">Nuestras experiencias</h1>
@@ -55,12 +55,12 @@ import Montseny from '../assets/Montseny.png';
                                         </tr>
 
 
-                                        <tr className='btn-orange'>
+                                        <tr className='btn-card-container'>
                                             <td>
-                                            <a className="btn-orange-link" href="#">Editar</a>
+                                                <button className="btn-orange editar"><a className="btn-orange-link" href="#">Editar</a></button>
                                             </td>
                                             <td>
-                                                <a className="btn-orange-link" onClick={() => deleteExperience(experience.id)}>Borrar</a>
+                                                <button className="btn-orange borrar"><a className="btn-orange-link" onClick={() => deleteExperience(experience.id)}>Borrar</a></button>
                                             </td>
                                         </tr>
 
@@ -70,7 +70,6 @@ import Montseny from '../assets/Montseny.png';
 
                     </div>
                 </div>
-            </main>
         );
     }
 

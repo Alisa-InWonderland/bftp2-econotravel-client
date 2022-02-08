@@ -25,7 +25,7 @@ export const TopNavBar = () => {
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Log in</a>
+                    <a className="nav-link login" href="#">Log in</a>
                 </li>
             </ul>
 
