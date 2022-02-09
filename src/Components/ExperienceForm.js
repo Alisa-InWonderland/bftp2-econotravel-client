@@ -27,10 +27,11 @@ export const ExperienceForm = (props) => {
 
     return (
         <Fragment>
-            <h1>Añadir Nueva Experiencia</h1>
-            <form className="row edit-form" onSubmit={enviarDatos}>
-                {props.edit ? (
-                    <>
+            {props.edit ? (
+                <>
+                    <h1>Editar Nueva Experiencia</h1>
+                    <form className="row edit-form" onSubmit={enviarDatos}>
+
                         <div className="col-md-3">
                             <input type="text"
                                    placeholder="Título"
@@ -86,13 +87,15 @@ export const ExperienceForm = (props) => {
                         </div>
 
 
-                        <div className="card-footer mb-5">
-                            <input type="submit" className="boton-edit" value="Guardar"/>
+                        <div className="btn-edit-container">
+                            <input type="submit" className="btn-edit" value="Guardar"/>
                         </div>
-
-                    </>
-                ) : (
-                    <>
+                    </form>
+                </>
+            ) : (
+                <>
+                    <h1>Añadir nueva experiencia</h1>
+                    <form className="add-form" onSubmit={enviarDatos}>
                         <div className="col-md-3">
                             <input type="text"
                                    placeholder="Título"
@@ -148,14 +151,12 @@ export const ExperienceForm = (props) => {
                         </div>
 
 
-                        <div className="card-footer mb-5">
-                            <input type="submit" className="boton-edit" value="Añadir Nuevo"/>
+                        <div className="btn-add-container">
+                            <input type="submit" className="btn-add" value="Añadir"/>
                         </div>
-
-                    </>
-
-                )}
-            < /form>
+                    </form>
+                </>
+            )}
         </Fragment>
     );
 }

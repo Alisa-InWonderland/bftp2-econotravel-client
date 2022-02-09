@@ -1,5 +1,6 @@
 import React from "react";
 import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 
 export function ExperienceCatalog() {
@@ -58,7 +59,9 @@ export function ExperienceCatalog() {
                             <tr className='btn-card-container'>
                                 <td>
                                     <button className="btn-orange editar"><a className="btn-orange-link"
-                                                                             href="#">Editar</a></button>
+                                                                             href="#">
+                                        <Link to="/add">Editar</Link>
+                                    </a></button>
                                 </td>
                                 <td>
                                     <button className="btn-orange borrar"><a className="btn-orange-link"

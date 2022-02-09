@@ -36,15 +36,13 @@ function App() {
 
     return (
         <div className="App">
-                <Header/>
-            <Routes>
-                <Route path="/home" element={<ExperienceCatalog ExperienceCatalog={ExperienceCatalog} />} />
-                <Route path="/about" element={<About About={About} />} />
-            </Routes>
-
+            <Header/>
             <main>
-                <ExperienceCatalog/>
-                <ExperienceForm onSubmit={e => addExperience(e)}/>
+                <Routes>
+                    <Route path="/home" element={<ExperienceCatalog ExperienceCatalog={ExperienceCatalog} />} />
+                    <Route path="/add" element={<ExperienceForm onSubmit={e => addExperience(e)} ExperienceForm={ExperienceForm} />} />
+                    <Route path="/about" element={<About About={About} />} />
+                </Routes>
             </main>
             <Footer/>
         </div>
