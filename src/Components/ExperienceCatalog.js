@@ -2,7 +2,6 @@ import React from "react";
 import {useEffect, useState} from "react";
 
 
-
 export function ExperienceCatalog() {
 
     const [experiences, setExperiences] = useState([]);
@@ -56,25 +55,17 @@ export function ExperienceCatalog() {
                             </tr>
 
 
-                                        <tr className='btn-card-container'>
-                                            <td>
-                                                <button className="btn-orange editar"><a className="btn-orange-link" href="#">Editar</a></button>
-                                            </td>
-                                            <td>
-                                                <button className="btn-orange borrar"><a className="btn-orange-link" onClick={() => deleteExperience(experience.id)}>Borrar</a></button>
-                                            </td>
-                                        </tr>
-
-                            <tr className='btn-orange'>
+                            <tr className='btn-card-container'>
                                 <td>
-                                    <a className="btn-orange-link" href="#">Editar</a>
+                                    <button className="btn-orange editar"><a className="btn-orange-link"
+                                                                             href="#">Editar</a></button>
                                 </td>
                                 <td>
-                                    <a className="btn-orange-link"
-                                       onClick={() => deleteExperience(experience.id)}>Borrar</a>
+                                    <button className="btn-orange borrar"><a className="btn-orange-link"
+                                                                             onClick={() => deleteExperience(experience.id)}>Borrar</a>
+                                    </button>
                                 </td>
                             </tr>
-
                             </tbody>
                         </table>
                     </div>)}

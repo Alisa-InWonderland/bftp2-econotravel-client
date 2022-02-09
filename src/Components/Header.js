@@ -1,5 +1,5 @@
 import React from "react";
-import  { TopNavBar } from './TopNavBar'
+import {TopNavBar} from './TopNavBar'
 import Image from "../assets/Image.png";
 import Decore from "../assets/Decore.png";
 
@@ -23,7 +23,10 @@ export const Header = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur<br/>
                     adipisicing elit. Ea excepturi exercitationem<br/>
                     illum, in laborum nostrum.</p>
-                <button className="btn-orange"><a className="btn-orange-link" href="#">Reservar experiencia</a></button>
+
+                <button className="btn-orange">
+                    <a className="btn-orange-link" href="#">Reservar experiencia</a>
+                </button>
             </div>
 
             <div className="girl-image-container">

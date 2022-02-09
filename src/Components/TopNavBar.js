@@ -7,29 +7,34 @@ export const TopNavBar = () => {
         <nav className="topNavBar">
             <Link to="/home">
                 <div className="topNavBar-brand">
+
                     <a href="#">
                         <img className="logoImg" src={logoEconotravel} alt={"Econotravel logo"}/>
                     </a>
                 </div>
+
             </Link>
-            <Link to="/reserva">Reserva</Link>
-            <Link to="/about">Quienes somos</Link>
-            <Link to="/contacto">Contacto</Link>
-
-
+            <ul className="topNavBar-links">
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Añadir experiencia</a>
+                    <Link className="nav-link" to="/reserva">Reserva</Link>
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link login" href="#">Log in</a>
+                    <Link className="nav-link" to="/about">Quienes somos</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/contacto">Contacto</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/add">Añadir Experiencia</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link login" to="/login">Log in</Link>
                 </li>
             </ul>
 
-            <Link to="/add">Añadir Experiencia</Link>
 
-
-            <Link to="/login">Log in</Link>
         </nav>
-    );
+    )
+        ;
 }
