@@ -39,6 +39,7 @@ function App() {
             <Header/>
             <main>
                 <Routes>
+                    /* TODO: Revisar llamadas repetidas en Route */
                     <Route path="/home" element={<ExperienceCatalog ExperienceCatalog={ExperienceCatalog} />} />
                     <Route path="/add" element={<ExperienceForm onSubmit={e => addExperience(e)} ExperienceForm={ExperienceForm} />} />
                     <Route path="/about" element={<About About={About} />} />
