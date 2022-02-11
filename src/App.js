@@ -45,12 +45,22 @@ function App() {
 
     }
 
+    const deleteExperience = (id) => {
+        fetch(`http://localhost:8080/api/experiences/delete/${id}`,
+            {
+                method: 'DELETE'
+            }
+        ).then(_ => setRequiresUpdate(true))
+
+    }
+
+
     return (
         <div className="App">
             <Header/>
-            <main>
+            <main className="main">
                 <Routes>
-                    <Route path="/" element={<ExperienceCatalog experiences={experiences}/>} />} />
+                    <Route path="/" element={<ExperienceCatalog experiences={experiences} deleteExperience={deleteExperience} editExperience={editExperience}/>} />
                     <Route path="/add" element={<ExperienceForm
                         addExperience={addExperience}/>}
                     />

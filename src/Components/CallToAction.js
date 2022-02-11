@@ -1,9 +1,15 @@
 import React from "react";
 import Image from "../assets/Image.png";
+import Decore from "../assets/Decore.png";
 
 export const CallToAction = () => {
     return (
         <>
+            <div className="decoreImg-container">
+
+                <img className="decoreImg" src={Decore} alt={"Decore"}/>
+
+            </div>
             <div className="titles">
                 <h6>Los mejores destinos de Cataluña</h6>
                 <h1>Viaja, <span className="title-decore">disfruta</span><br/>

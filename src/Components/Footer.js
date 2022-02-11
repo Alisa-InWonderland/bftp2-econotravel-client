@@ -1,5 +1,5 @@
 import React from "react";
-import {BottomNavBar} from "./BottomNavBar";
+import { BottomNavBar } from "./BottomNavBar";
 
 export const Footer = () => {
     return (

@@ -29,10 +29,10 @@ export const ExperienceForm = (props) => {
 
 
     return (
-        <main>
+
             <section className="form-section">
                 {props.edit ? (
-                    <>
+                    <div className="form-wrapper">
                         <h1>Editar Nueva Experiencia</h1>
                         <div className="form-container">
                             <form className="edit-form" onSubmit={enviarDatos}>
@@ -97,13 +97,13 @@ export const ExperienceForm = (props) => {
                                 </div>
                             </form>
                         </div>
-                    </>
+                    </div>
                 ) : (
-                    <>
+                    <div className="form-wrapper">
                         <h1>Añadir nueva experiencia</h1>
                         <div className="form-container">
                             <form className="add-form" onSubmit={enviarDatos}>
-                                <div className="col-md-3">
+                                <div className="form-group">
                                     <input type="text"
                                            placeholder="Título"
                                            className="form-control"
@@ -159,14 +159,14 @@ export const ExperienceForm = (props) => {
 
 
                                 <div className="btn-add-container">
-                                    <button type="submit" className="btn-add"> Add Experience</button>
+                                    <button type="submit" className="btn-add">Add Experience</button>
                                 </div>
                             </form>
                         </div>
-                    </>
+                    </div>
                 )}
             </section>
-        </main>
+
     );
 }
 

@@ -7,13 +7,14 @@
 }
 
 body {
-  margin: 0 20px 20px;
+  margin: 0 10px 5px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
   text-align: center;
   background: linear-gradient(to top, #f5f1f1, #fff);
+
 }
 
 .App {
@@ -22,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
 
@@ -48,13 +50,14 @@ td {
   z-index: 1;
   position: relative;
   overflow: hidden;
-  padding-top: 15px;
-  margin-bottom: 50px;
+  padding-top: 10px;
+
 }
 
 .titles {
   text-align: left;
   margin-top: 70px;
+  margin-bottom: 80px;
 
 }
 
@@ -71,7 +74,7 @@ td {
 .titles h1 {
   font-family: 'Volkhov', serif;
   font-weight: 700;
-  font-size: 62px;
+  font-size: 58px;
   margin-bottom: 20px;
   line-height: 1.1;
 }
@@ -132,11 +135,11 @@ td {
 }
 
 .decoreImg, .girl-image {
-  height: 100%;
+  max-height: 100%;
 }
 
 .girl-image {
-  height: 87%;
+  height: 90%;
 }
 
 .topNavBar, .bottomNavBar {
@@ -162,16 +165,16 @@ td {
   align-items: center;
   gap: 80px;
 }
+
 .topNavBar-links li:last-child {
   border: 1px solid #000;
   border-radius: 5px;
   padding: 3px 7px;
  }
 
-.main {
-
+main {
+  margin-top: 70px;
   padding: 0 20px;
-  /*position: absolute;*/
   flex-grow: 1;
   z-index: 1;
 }
@@ -267,14 +270,16 @@ tbody {
   display: flex;
   flex-shrink: 0;
   height: 80px;
+  margin-top: 20px;
 
 }
 .bottomNavBar-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  position: fixed;
+  margin: auto;
 }
+
 .bottomNavBar-brand {
   text-align: left;
 }
@@ -287,12 +292,61 @@ tbody {
   display: flex;
   gap: 5px;
 }
+
 .icono-rs {
   width: 25px;
 }
 
 .copyright {
   font-size: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.form-wrapper {
+  margin-bottom: 50px;
 }
 
+.form-section {
+  width: 50%;
+  background-color: #FFAA05;
+  margin: auto;
+  padding: 20px 10px;
+  border-radius: 10px;
 
+}
+
+.form-section h1 {
+  font-family: 'Volkhov', serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc7c7;
+  padding: 5px;
+}
+
+.add-form {
+  margin-bottom: 20px;
+}
+
+.btn-add-container {
+
+}
+
+.btn-add {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
