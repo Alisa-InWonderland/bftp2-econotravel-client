@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 export const TopNavBar = () => {
     return (
         <nav className="topNavBar">
-            <Link to="/home">
+            <Link to="/">
                 <div className="topNavBar-brand">
                         <img className="logoImg" src={logoEconotravel} alt={"Econotravel logo"}/>
                 </div>
@@ -20,7 +20,7 @@ export const TopNavBar = () => {
                     <Link className="nav-link" to="/about">Quienes somos</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/contacto">Contacto</Link>
+                    <Link className="nav-link" to="/contact">Contacto</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/add">Añadir Experiencia</Link>
