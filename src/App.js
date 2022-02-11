@@ -34,17 +34,26 @@ function App() {
         ).then(_ => setRequiresUpdate(true))
 
     }
+    const editExperience = (experience) => {
+        fetch("http://localhost:8080/api/experiences/edit/{id}",
+            {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(experience)
+            }
+        ).then(_ => setRequiresUpdate(true))
+
+    }
 
     return (
         <div className="App">
             <Header/>
             <main>
                 <Routes>
-                    /* TODO: Revisar llamadas repetidas en Route */
-                    <Route path="/home" element={<ExperienceCatalog ExperienceCatalog={ExperienceCatalog} />} />
-                    <Route path="/add" element={<ExperienceForm onSubmit={e => addExperience(e)} ExperienceForm={ExperienceForm} />} />
-                    <Route path="/about" element={<About About={About} />} />
-                    <Route path="/contact" element={<Contact Contact={Contact} />} />
+                    <Route path="/" element={<ExperienceCatalog/>} />} />
+                    <Route path="/add" element={<ExperienceForm onSubmit={e => addExperience(e)} />} />
+                    <Route path="/about" element={<About/>}/>
+                    <Route path="/contact" element={<Contact/>} />
                 </Routes>
             </main>
             <Footer/>
