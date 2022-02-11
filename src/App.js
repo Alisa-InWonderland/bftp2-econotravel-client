@@ -4,8 +4,9 @@ import  { Footer } from './Components/Footer'
 import {ExperienceCatalog} from "./Components/ExperienceCatalog";
 import {ExperienceForm} from "./Components/ExperienceForm";
 import {About} from "./Components/About";
-import {useEffect, useState, Component} from "react";
+import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
+import {Contact} from "./Components/Contact";
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
                     <Route path="/" element={<ExperienceCatalog/>} />} />
                     <Route path="/add" element={<ExperienceForm  addExperience={addExperience} editExperience={editExperience} experiences={experiences} setExperiences={setExperiences}/>} />
                     <Route path="/about" element={<About/>}/>
+                    <Route path="/contact" element={<Contact/>} />
                 </Routes>
             </main>
             <Footer/>
