@@ -50,7 +50,7 @@ function App() {
             <main>
                 <Routes>
                     <Route path="/" element={<ExperienceCatalog/>} />} />
-                    <Route path="/add" element={<ExperienceForm onSubmit={e => addExperience(e)} />} />
+                    <Route path="/add" element={<ExperienceForm  addExperience={addExperience} editExperience={editExperience} experiences={experiences} setExperiences={setExperiences}/>} />
                     <Route path="/about" element={<About/>}/>
                 </Routes>
             </main>

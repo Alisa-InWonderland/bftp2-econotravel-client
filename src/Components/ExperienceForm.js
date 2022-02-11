@@ -1,9 +1,9 @@
 import React, {Fragment, useState, useEffect} from 'react';
 
 
-export const ExperienceForm = (props) => {
+export const ExperienceForm = (props, {addExperience, editExperience, experiences, setExperiences}) => {
 
-    const [datos, setDatos] = useState(props.edit ? props.edit.value : {
+    const [experiences, setExperiences] = useState(props.edit ? props.edit.value : {
         name: '',
         description: '',
         price: null,
@@ -38,7 +38,7 @@ export const ExperienceForm = (props) => {
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="name"
-                                   value={datos.name}/>
+                                   value={props.datos.name}/>
                         </div>
 
                         <div className="form-group">
@@ -47,7 +47,7 @@ export const ExperienceForm = (props) => {
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="description"
-                                   value={datos.description}/>
+                                   value={props.datos.description}/>
                         </div>
 
                         <div className="form-group">
@@ -56,7 +56,7 @@ export const ExperienceForm = (props) => {
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="price"
-                                   value={datos.price}/>
+                                   value={props.datos.price}/>
                         </div>
 
                         <div className="form-group">
@@ -65,7 +65,7 @@ export const ExperienceForm = (props) => {
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="duration"
-                                   value={datos.duration}/>
+                                   value={props.datos.duration}/>
                         </div>
 
                         <div className="form-group">
@@ -74,7 +74,7 @@ export const ExperienceForm = (props) => {
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="accessibility"
-                                   value={datos.accessibility}/>
+                                   value={props.datos.accessibility}/>
                         </div>
 
                         <div className="form-group">
@@ -82,13 +82,13 @@ export const ExperienceForm = (props) => {
                                    placeholder="Etiquetas"
                                    className="form-control"
                                    onChange={handleInputChange}
-                                   value={datos.tags}
+                                   value={props.datos.tags}
                                    name="tags"/>
                         </div>
 
 
                         <div className="btn-edit-container">
-                            <input type="submit" className="btn-edit" value="Guardar"/>
+                            <button type="submit" className="btn-edit" value="Guardar"/>
                         </div>
                     </form>
                 </>
@@ -152,7 +152,7 @@ export const ExperienceForm = (props) => {
 
 
                         <div className="btn-add-container">
-                            <input type="submit" className="btn-add" value="Añadir"/>
+                            <button type="submit" className="btn-add" value="Añadir"/>
                         </div>
                     </form>
                 </>
