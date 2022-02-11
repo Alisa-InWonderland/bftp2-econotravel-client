@@ -4,20 +4,9 @@ import {Link} from "react-router-dom";
 import {CallToAction} from "./CallToAction";
 
 
-export function ExperienceCatalog() {
-
-    const [experiences, setExperiences] = useState([]);
+export function ExperienceCatalog({experiences}) {
     const [requiresUpdate, setRequiresUpdate] = useState(true);
 
-
-    useEffect(() => {
-        if (requiresUpdate) {
-            fetch("http://localhost:8080/api/experiences")
-                .then(r => r.json())
-                .then(setExperiences)
-                .then(_ => setRequiresUpdate(false));
-        }
-    }, [requiresUpdate])
 
     const deleteExperience = (id) => {
         fetch(`http://localhost:8080/api/experiences/delete/${id}`,

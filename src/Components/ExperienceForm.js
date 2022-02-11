@@ -1,9 +1,12 @@
 import React, {Fragment, useState, useEffect} from 'react';
+import {useNavigate} from "react-router-dom";
 
 
-export const ExperienceForm = (props, {addExperience, editExperience, experiences, setExperiences}) => {
+export const ExperienceForm = (props) => {
 
-    const [experiences, setExperiences] = useState(props.edit ? props.edit.value : {
+    let navigate = useNavigate();
+
+    const [datos, setDatos] = useState(props.edit ? props.edit.value : {
         name: '',
         description: '',
         price: null,
@@ -20,7 +23,7 @@ export const ExperienceForm = (props, {addExperience, editExperience, experience
     }
     const enviarDatos = (event) => {
         event.preventDefault()
-        props.onSubmit(datos)
+        props.addExperience(datos).then(() => navigate("/"))
         console.log(datos.name + ' ' + datos.description + ' ' + datos.price + ' ' + datos.duration + ' ' + datos.accessibility + ' ' + datos.tags + ' ')
     }
 
@@ -152,7 +155,7 @@ export const ExperienceForm = (props, {addExperience, editExperience, experience
 
 
                         <div className="btn-add-container">
-                            <button type="submit" className="btn-add" value="Añadir"/>
+                            <button type="submit" className="btn-add"> Add Experience</button>
                         </div>
                     </form>
                 </>

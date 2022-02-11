@@ -273,6 +273,7 @@ tbody {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 .bottomNavBar-brand {
   text-align: left;

@@ -25,7 +25,7 @@ function App() {
     }, [requiresUpdate])
 
     const addExperience = (experience) => {
-        fetch("http://localhost:8080/api/experiences",
+        return fetch("http://localhost:8080/api/experiences",
             {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
@@ -50,8 +50,10 @@ function App() {
             <Header/>
             <main>
                 <Routes>
-                    <Route path="/" element={<ExperienceCatalog/>} />} />
-                    <Route path="/add" element={<ExperienceForm  addExperience={addExperience} editExperience={editExperience} experiences={experiences} setExperiences={setExperiences}/>} />
+                    <Route path="/" element={<ExperienceCatalog experiences={experiences}/>} />} />
+                    <Route path="/add" element={<ExperienceForm
+                        addExperience={addExperience}/>}
+                    />
                     <Route path="/about" element={<About/>}/>
                     <Route path="/contact" element={<Contact/>} />
                 </Routes>
