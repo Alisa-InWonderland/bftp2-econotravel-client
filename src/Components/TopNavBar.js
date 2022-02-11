@@ -7,10 +7,7 @@ export const TopNavBar = () => {
         <nav className="topNavBar">
             <Link to="/home">
                 <div className="topNavBar-brand">
-
-                    <a href="#">
                         <img className="logoImg" src={logoEconotravel} alt={"Econotravel logo"}/>
-                    </a>
                 </div>
 
             </Link>

@@ -4,8 +4,9 @@ import  { Footer } from './Components/Footer'
 import {ExperienceCatalog} from "./Components/ExperienceCatalog";
 import {ExperienceForm} from "./Components/ExperienceForm";
 import {About} from "./Components/About";
-import {useEffect, useState, Component} from "react";
+import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
+import {Contact} from "./Components/Contact";
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
                     <Route path="/home" element={<ExperienceCatalog ExperienceCatalog={ExperienceCatalog} />} />
                     <Route path="/add" element={<ExperienceForm onSubmit={e => addExperience(e)} ExperienceForm={ExperienceForm} />} />
                     <Route path="/about" element={<About About={About} />} />
+                    <Route path="/contact" element={<Contact Contact={Contact} />} />
                 </Routes>
             </main>
             <Footer/>
