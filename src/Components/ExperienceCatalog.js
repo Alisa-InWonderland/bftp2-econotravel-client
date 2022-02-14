@@ -7,7 +7,10 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
 
 
     return (
-                <div className='experienceCatalog'>
+        <>
+                <CallToAction />
+
+                <section className='experienceCatalog'>
 
                     <h1 className="catalog-title">Nuestras experiencias</h1>
 
@@ -50,7 +53,9 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
                             </div>
                         )}
                     </div>
-                </div>
+                </section>
+    </>
     );
+
 }
 
