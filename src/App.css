@@ -345,6 +345,8 @@ tbody {
 
 .form-group {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-group input {
@@ -357,13 +359,29 @@ tbody {
   background-color: #ccc7c7;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  display: flex;
+  justify-content: space-between;
 }
+
 .form-group input:hover{
   cursor: pointer;
   border-style: solid;
   border-width: 2px;
   border-color: #4b7f55;
 }
+.form-group-more input {
+  width: 450px;
+  height: 75px;
+  border-radius: 5px;
+  border: 1px solid #ccc7c7;
+  padding: 5px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  background-color: #ccc7c7;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 
 .add-form {
   margin-bottom: 20px;
