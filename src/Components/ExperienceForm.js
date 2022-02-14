@@ -40,8 +40,8 @@ export const ExperienceForm = (props) => {
                     <form className="edit-form" onSubmit={enviarDatos} action="">
 
                         <div className="form-group">
+                            <label htmlFor="">Nombre de la experiencia</label>
                             <input type="text"
-                                   placeholder="Título"
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="name"
@@ -49,8 +49,8 @@ export const ExperienceForm = (props) => {
                         </div>
 
                         <div className="form-group">
+                            <label htmlFor="">Descripción</label>
                             <input type="text"
-                                   placeholder="Descripción"
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="description"
@@ -58,8 +58,8 @@ export const ExperienceForm = (props) => {
                         </div>
 
                         <div className="form-group">
+                            <label htmlFor="">Precio p/p</label>
                             <input type="text"
-                                   placeholder="Precio p/p"
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="price"
@@ -67,8 +67,8 @@ export const ExperienceForm = (props) => {
                         </div>
 
                         <div className="form-group">
+                            <label htmlFor="">Duración</label>
                             <input type="text"
-                                   placeholder="Duración"
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="duration"
@@ -76,8 +76,8 @@ export const ExperienceForm = (props) => {
                         </div>
 
                         <div className="form-group">
+                            <label htmlFor="">Accesibilidad</label>
                             <input type="text"
-                                   placeholder="Accesibilidad"
                                    className="form-control"
                                    onChange={handleInputChange}
                                    name="accessibility"
@@ -85,8 +85,8 @@ export const ExperienceForm = (props) => {
                         </div>
 
                         <div className="form-group">
+                            <label htmlFor="">Tags</label>
                             <input type="text"
-                                   placeholder="Etiquetas"
                                    className="form-control"
                                    onChange={handleInputChange}
                                    value={datos.tags}
