@@ -6,7 +6,10 @@ import {CallToAction} from "./CallToAction";
 export function ExperienceCatalog({experiences, deleteExperience, editExperience}) {
 
     return (
-                <div className='experienceCatalog'>
+        <>
+                <CallToAction />
+
+                <section className='experienceCatalog'>
 
                     <h1 className="catalog-title">Nuestras experiencias</h1>
 
@@ -50,7 +53,9 @@ export function ExperienceCatalog({experiences, deleteExperience, editExperience
                             </div>
                         )}
                     </div>
-                </div>
+                </section>
+    </>
     );
+
 }
 

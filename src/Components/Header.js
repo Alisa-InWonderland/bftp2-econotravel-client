@@ -10,7 +10,6 @@ export const Header = () => {
 
             <TopNavBar/>
 
-            <CallToAction/>
         </header>
     );
 };

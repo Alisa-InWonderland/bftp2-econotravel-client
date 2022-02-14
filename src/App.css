@@ -15,14 +15,16 @@ body {
   text-align: center;
   background: linear-gradient(to top, #f5f1f1, #fff);
 
+
 }
 
 .App {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 
 }
 
@@ -45,21 +47,28 @@ td {
 }
 
 /**********HEADER******************/
+
 .header {
   width: 100%;
-  z-index: 1;
-  position: relative;
-  overflow: hidden;
   padding-top: 10px;
+  z-index: 20;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  justify-content: space-between;
+  margin-top: -60px;
+  margin-bottom: 50px;
 
 }
 
 .titles {
   text-align: left;
-  margin-top: 70px;
-  margin-bottom: 80px;
-
+  margin-top: 25%;
+  margin-bottom: 30%;
 }
+
 
 .titles h6 {
   font-size: 17px;
@@ -71,10 +80,12 @@ td {
   margin-bottom: 15px;
 }
 
+
 .titles h1 {
+  width: 100%;
   font-family: 'Volkhov', serif;
   font-weight: 700;
-  font-size: 58px;
+  font-size: 60px;
   margin-bottom: 20px;
   line-height: 1.1;
 }
@@ -120,26 +131,25 @@ td {
 
 .decoreImg-container {
   position: absolute;
-  height: 100%;
-  top: -15%;
-  right: -4%;
+  width: 100%;
+  top: -34%;
+  right: 6%;
   z-index: -50;
+
 }
 
 .girl-image-container {
-  position: absolute;
-  height: 100%;
-  top: 13%;
-  right: 8%;
-  z-index: -40;
+  width: 100%;
+  position: relative;
 }
 
-.decoreImg, .girl-image {
-  max-height: 100%;
+.decoreImg {
+  max-width: 120%;
 }
 
 .girl-image {
-  height: 90%;
+  max-width: 100%;
+  justify-items: left;
 }
 
 .topNavBar, .bottomNavBar {
@@ -177,14 +187,16 @@ main {
   padding: 0 20px;
   flex-grow: 1;
   z-index: 1;
+
 }
 
 /********Tarjeta**************/
 
 .catalog-title {
+  font-size: 40px;
   font-family: 'Volkhov', serif;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
