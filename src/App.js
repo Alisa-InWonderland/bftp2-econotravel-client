@@ -13,6 +13,7 @@ function App() {
     const [experiences, setExperiences] = useState([]);
     const [newExperience, setNewExperience] = useState("");
     const [requiresUpdate, setRequiresUpdate] = useState(true);
+    const [experienceToEdit, setExperienceToEdit] = useState({name: "hola", price: 50, image:"img"})
 
 
     useEffect(() => {
@@ -60,9 +61,13 @@ function App() {
             <Header/>
             <main className="main">
                 <Routes>
-                    <Route path="/" element={<ExperienceCatalog experiences={experiences} deleteExperience={deleteExperience} editExperience={editExperience}/>} />
+                    <Route path="/" element={<ExperienceCatalog
+                        experiences={experiences}
+                        deleteExperience={deleteExperience}/>} />
+
                     <Route path="/add" element={<ExperienceForm
-                        addExperience={addExperience}/>}
+                        addExperience={addExperience}
+                    />}
                     />
                     <Route path="/about" element={<About/>}/>
                     <Route path="/contact" element={<Contact/>} />

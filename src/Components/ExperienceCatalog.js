@@ -3,10 +3,15 @@ import {Link} from "react-router-dom";
 import {CallToAction} from "./CallToAction";
 
 
-export function ExperienceCatalog({experiences, deleteExperience, editExperience}) {
+
+export function ExperienceCatalog({experiences, deleteExperience}) {
+
 
     return (
-                <div className='experienceCatalog'>
+        <>
+                <CallToAction />
+
+                <section className='experienceCatalog'>
 
                     <h1 className="catalog-title">Nuestras experiencias</h1>
 
@@ -34,10 +39,9 @@ export function ExperienceCatalog({experiences, deleteExperience, editExperience
 
                                     <tr className='btn-card-container'>
                                         <td>
-                                            <button className="btn-orange editar"><a className="btn-orange-link"
-                                                                                     onClick={() => editExperience(experience)}>
-                                                <Link to="/add">Editar</Link>
-                                            </a></button>
+                                            <button className="btn-orange editar">
+                                                <Link className="btn-orange-link" to="/add" state={{ data: experience}}>Editar</Link>
+                                            </button>
                                         </td>
                                         <td>
                                             <button className="btn-orange borrar"><a className="btn-orange-link"
@@ -50,7 +54,9 @@ export function ExperienceCatalog({experiences, deleteExperience, editExperience
                             </div>
                         )}
                     </div>
-                </div>
+                </section>
+    </>
     );
+
 }
 
