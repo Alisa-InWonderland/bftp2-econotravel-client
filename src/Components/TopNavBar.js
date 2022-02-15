@@ -13,7 +13,7 @@ export const TopNavBar = () => {
             </Link>
             <ul className="topNavBar-links">
                 <li className="nav-item">
-                    <Link className="nav-link" to="/reserva">Reserva</Link>
+                    <Link className="nav-link" to="/reserve">Reserva</Link>
                 </li>
 
                 <li className="nav-item">

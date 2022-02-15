@@ -6,6 +6,7 @@ import {ExperienceForm} from "./Components/ExperienceForm";
 import {About} from "./Components/About";
 import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
+import {ReserveForm} from "./Components/ReserveForm";
 import {Contact} from "./Components/Contact";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     const [newExperience, setNewExperience] = useState("");
     const [requiresUpdate, setRequiresUpdate] = useState(true);
     const [experienceToEdit, setExperienceToEdit] = useState({name: "hola", price: 50, image:"img"})
+    const [reservas, setReservas] = useState([]);
 
 
     useEffect(() => {
@@ -21,6 +23,15 @@ function App() {
             fetch("http://localhost:8080/api/experiences")
                 .then(r => r.json())
                 .then(setExperiences)
+                .then(_ => setRequiresUpdate(false));
+        }
+    }, [requiresUpdate])
+
+    useEffect(() => {
+        if (requiresUpdate) {
+            fetch("http://localhost:8080/api/reservas")
+                .then(r => r.json())
+                .then(setReservas)
                 .then(_ => setRequiresUpdate(false));
         }
     }, [requiresUpdate])
@@ -54,6 +65,16 @@ function App() {
         ).then(_ => setRequiresUpdate(true))
 
     }
+    const sendReserve = (reservas) => {
+        return fetch("http://localhost:8080/api/reservas",
+            {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(reservas)
+            }
+        ).then(_ => setRequiresUpdate(true))
+
+    }
 
 
     return (
@@ -65,10 +86,10 @@ function App() {
                         experiences={experiences}
                         deleteExperience={deleteExperience}/>} />
 
-                    <Route path="/add" element={<ExperienceForm
-                        addExperience={addExperience}
+                    <Route path="/add" element={<ExperienceForm addExperience={addExperience}
                     />}
                     />
+                    <Route path="/reserve" element={<ReserveForm sendReserve={sendReserve} />} />
                     <Route path="/about" element={<About/>}/>
                     <Route path="/contact" element={<Contact/>} />
                 </Routes>
