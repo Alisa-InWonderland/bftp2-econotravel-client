@@ -50,11 +50,9 @@ export const ExperienceForm = (props) => {
 
                         <div className="form-group">
                             <label htmlFor="">Descripción</label>
-                            <input type="text"
-                                   className="form-control"
-                                   onChange={handleInputChange}
-                                   name="description"
-                                   value={datos.description}/>
+                            <textarea value={datos.description} name="description" id="" cols="50" rows="5"
+                                      className="form-control"
+                                      onChange={handleInputChange}/>
                         </div>
 
                         <div className="form-group">
@@ -77,11 +75,9 @@ export const ExperienceForm = (props) => {
 
                         <div className="form-group">
                             <label htmlFor="">Accesibilidad</label>
-                            <input type="text"
-                                   className="form-control"
-                                   onChange={handleInputChange}
-                                   name="accessibility"
-                                   value={datos.accessibility}/>
+                            <textarea value={datos.accessibility} name="description" id="" cols="50" rows="5"
+                                      className="form-control"
+                                      onChange={handleInputChange}/>
                         </div>
 
                         <div className="form-group">
