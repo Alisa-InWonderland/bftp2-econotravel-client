@@ -26,7 +26,7 @@ export const ExperienceForm = (props) => {
     }
     const enviarDatos = (event) => {
         event.preventDefault()
-        props.addExperience(datos).then(() => navigate("/"))
+        props.sendReserve(datos).then(() => navigate("/"))
         console.log(datos.name + ' ' + datos.description + ' ' + datos.price + ' ' + datos.duration + ' ' + datos.accessibility + ' ' + datos.tags + ' ')
     }
 

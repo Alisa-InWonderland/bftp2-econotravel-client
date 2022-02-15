@@ -376,7 +376,7 @@ tbody {
     border-color: #4b7f55;
 }
 
-textarea {
+textarea, select {
     background-color: #ccc7c7;
     padding: 3px;
     font-family: 'Poppins', sans-serif;
