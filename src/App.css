@@ -467,14 +467,21 @@ textarea:hover {
     border-radius: 25px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     margin-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
     padding-top: 25px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.mission-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
 
 .statement {
     text-align: center;
@@ -488,12 +495,18 @@ textarea:hover {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
-
     text-align: center;
 }
 
 .title-mission {
     margin-bottom: 5px;
+}
+
+.mission-text-container {
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+
 }
 
 .mission-text {
@@ -503,9 +516,12 @@ textarea:hover {
 #paragr-2 {
     margin-bottom: 10px;
 }
-
+.fundadora {
+    width: 20%;
+    padding: 10px;
+}
 .fundadora-img {
-    margin: 10px;
+    width: 100%;
 }
 
 .fundadora-name {
