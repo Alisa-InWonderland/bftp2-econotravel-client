@@ -1,7 +1,7 @@
 import './App.css';
 import  { Header } from './Components/Header'
 import  { Footer } from './Components/Footer'
-import {ExperienceCatalog} from "./Components/ExperienceCatalog";
+import {ExperienceCatalog} from "./Components/ExperienceCatalog/ExperienceCatalog";
 import {ExperienceForm} from "./Components/ExperienceForm";
 import {About} from "./Components/About";
 import {useEffect, useState} from "react";
@@ -9,7 +9,7 @@ import {Route, Routes} from "react-router-dom";
 import {ReserveForm} from "./Components/ReserveForm";
 import {Contact} from "./Components/Contact";
 import {getExperiences} from "./services/getExperiences";
-import {ReservesList} from "./Components/ReservesList";
+import {ReservesList} from "./Components/ReservesList/ReservesList";
 import {API_URL} from "./services/settings";
 
 function App() {

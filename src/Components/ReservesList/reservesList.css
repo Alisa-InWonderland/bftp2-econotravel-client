@@ -1,0 +1,38 @@
+.reservesList-title {
+    margin-bottom: 25px;
+}
+.tablelist {
+
+}
+
+.reserva-table table{
+    width: 100%;
+    font-size: 12px;
+    margin: 45px;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 20px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.reserva-th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #d57f03;
+    border-top: 4px solid #d57f03;
+    border-bottom: 1px solid #fff;
+    color: #000000; }
+
+.reserva-td {
+    padding: 8px;
+    background: #eabc78;
+    border-bottom: 1px solid #fff;
+    color: #000000;
+    border-top: 1px solid transparent; }
+
+.reserva-th:hover td {
+    background: #eabc78;
+    color: #38603f;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {CallToAction} from "./CallToAction";
+import {CallToAction} from "../CallToAction";
+import "./experienceCatalog.css"
 
 
 
