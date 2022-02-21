@@ -21,7 +21,7 @@ export const About = () => {
                     Econotravel Barcelona.</p>
 
                 <div>
-                    <img className="fundadora-img" src={fundadora} alt={"Portrait de la fundadora"}/>
+
                     <br/>
                     <span className="fundadora-name">Marina Herrán, fundadora de Econotravel</span>
                 </div>
