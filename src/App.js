@@ -9,6 +9,7 @@ import {Route, Routes} from "react-router-dom";
 import {ReserveForm} from "./Components/ReserveForm";
 import {Contact} from "./Components/Contact";
 import {getExperiences} from "./services/getExperiences";
+import {ReservesList} from "./Components/ReservesList";
 import {API_URL} from "./services/settings";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     const [experiences, setExperiences] = useState([]);
     const [requiresUpdate, setRequiresUpdate] = useState(true);
     const [reservas, setReservas] = useState([]);
+
 
 
     useEffect(() => {
@@ -81,8 +83,7 @@ function App() {
             <Header/>
             <main className="main">
                 <Routes>
-                    <Route path="/" element={<ExperienceCatalog
-                        experiences={experiences}
+                    <Route path="/" element={<ExperienceCatalog experiences={experiences}
                         deleteExperience={deleteExperience}/>} />
 
                     <Route path="/add" element={<ExperienceForm addExperience={addExperience}
@@ -90,6 +91,7 @@ function App() {
                     />
                     <Route path="/reserve" element={<ReserveForm sendReserve={sendReserve} />} />
                     <Route path="/about" element={<About/>}/>
+                    <Route path="/reservesList" element={<ReservesList reservas={reservas}/>}/>
                     <Route path="/contact" element={<Contact/>} />
                 </Routes>
             </main>

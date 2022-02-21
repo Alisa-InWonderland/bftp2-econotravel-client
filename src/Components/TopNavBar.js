@@ -25,6 +25,10 @@ export const TopNavBar = () => {
                 </li>
 
                 <li className="nav-item">
+                    <Link className="nav-link" to="/reservesList">Lista de Reservas</Link>
+                </li>
+
+                <li className="nav-item">
                     <Link className="nav-link" to="/about">Quienes somos</Link>
                 </li>
                 <li className="nav-item">

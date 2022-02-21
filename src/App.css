@@ -528,3 +528,41 @@ textarea:hover {
     font-family: 'Poppins', sans-serif;
     font-size: smaller;
 }
+
+
+/************tableReserve***************/
+.tablelist {
+    display: flex;
+    justify-content: center;
+}
+table {
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #d57f03;
+    border-top: 4px solid #d57f03;
+    border-bottom: 1px solid #fff;
+    color: #000000; }
+
+td {
+    padding: 8px;
+    background: #eabc78;
+    border-bottom: 1px solid #fff;
+    color: #000000;
+    border-top: 1px solid transparent; }
+
+tr:hover td {
+    background: #eabc78;
+    color: #38603f;
+    cursor: pointer;
+}
