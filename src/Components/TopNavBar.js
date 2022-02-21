@@ -1,8 +1,16 @@
 import React from "react";
+import {useState} from "react";
 import logoEconotravel from '../assets/logoEconotravel1.png';
 import {Link} from "react-router-dom";
 
 export const TopNavBar = () => {
+
+    const [loggedIn, setLoggedIn] = useState(true);
+
+    const onLoggedin = () => {
+        setLoggedIn(!loggedIn)
+    }
+
     return (
         <nav className="topNavBar">
             <Link to="/">
@@ -26,12 +34,9 @@ export const TopNavBar = () => {
                     <Link className="nav-link" to="/add">Añadir Experiencia</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link login" to="/login">Log in</Link>
+                    <Link onClick={onLoggedin} className="nav-link login" to="/login">{loggedIn ? 'Log in' : 'Log out'}</Link>
                 </li>
             </ul>
-
-
         </nav>
     )
-        ;
 }
