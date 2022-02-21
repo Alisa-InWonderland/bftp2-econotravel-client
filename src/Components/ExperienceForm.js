@@ -26,8 +26,8 @@ export const ExperienceForm = (props) => {
     }
     const enviarDatos = (event) => {
         event.preventDefault()
-        props.sendReserve(datos).then(() => navigate("/"))
-        console.log(datos.name + ' ' + datos.description + ' ' + datos.price + ' ' + datos.duration + ' ' + datos.accessibility + ' ' + datos.tags + ' ')
+        props.addExperience(datos)
+            .then(() => navigate("/"))
     }
 
 
@@ -50,7 +50,8 @@ export const ExperienceForm = (props) => {
 
                         <div className="form-group">
                             <label htmlFor="">Descripción</label>
-                            <textarea value={datos.description} name="description" id="" cols="50" rows="5"
+                            <textarea value={datos.description}
+                                      name="description" id="" cols="50" rows="5"
                                       className="form-control"
                                       onChange={handleInputChange}/>
                         </div>
@@ -75,7 +76,8 @@ export const ExperienceForm = (props) => {
 
                         <div className="form-group">
                             <label htmlFor="">Accesibilidad</label>
-                            <textarea value={datos.accessibility} name="description" id="" cols="50" rows="5"
+                            <textarea value={datos.accessibility}
+                                      name="accessibility" id="" cols="50" rows="5"
                                       className="form-control"
                                       onChange={handleInputChange}/>
                         </div>

@@ -21,7 +21,7 @@ export const ReserveForm = (props) => {
             [event.target.name]: event.target.value
         })
     }
-    const enviarDatos = (event) => {
+    const enviarDatosDeReserva = (event) => {
         event.preventDefault()
         props.sendReserve(reserveData).then(() => navigate("/"))
 
@@ -34,7 +34,7 @@ export const ReserveForm = (props) => {
             <div className="form-wrapper">
                 <h1>Reservar Experiencia</h1>
                 <div className="form-container">
-                    <form className="edit-form" onSubmit={enviarDatos} action="">
+                    <form className="edit-form" onSubmit={enviarDatosDeReserva} action="">
 
                         <div className="form-group">
                             <label htmlFor="">Nombre</label>

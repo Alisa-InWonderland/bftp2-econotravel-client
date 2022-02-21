@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../assets/ImageNew.png";
 import Decore from "../assets/Decore.png";
+import {Link} from "react-router-dom";
 
 export const CallToAction = () => {
     return (
@@ -15,7 +16,7 @@ export const CallToAction = () => {
                         illum, in laborum nostrum.</p>
 
                     <button className="btn-orange">
-                        <a className="btn-orange-link" href="#">Reservar experiencia</a>
+                        <Link className="btn-orange-link" to="/reserve">Reservar experiencia</Link>
                     </button>
                 </div>
                 <div className="girl-image-container">

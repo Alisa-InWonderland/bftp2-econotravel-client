@@ -8,20 +8,19 @@ import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
 import {ReserveForm} from "./Components/ReserveForm";
 import {Contact} from "./Components/Contact";
+import {getExperiences} from "./services/getExperiences";
+import {API_URL} from "./services/settings";
 
 function App() {
 
     const [experiences, setExperiences] = useState([]);
-    const [newExperience, setNewExperience] = useState("");
     const [requiresUpdate, setRequiresUpdate] = useState(true);
-    const [experienceToEdit, setExperienceToEdit] = useState({name: "hola", price: 50, image:"img"})
     const [reservas, setReservas] = useState([]);
 
 
     useEffect(() => {
         if (requiresUpdate) {
-            fetch("http://localhost:8080/api/experiences")
-                .then(r => r.json())
+            getExperiences()
                 .then(setExperiences)
                 .then(_ => setRequiresUpdate(false));
         }
@@ -37,11 +36,11 @@ function App() {
     }, [requiresUpdate])
 
     const addExperience = (experience) => {
-        return fetch("http://localhost:8080/api/experiences",
-            {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(experience)
+        return fetch(API_URL,
+        {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(experience)
             }
         ).then(_ => setRequiresUpdate(true))
 
