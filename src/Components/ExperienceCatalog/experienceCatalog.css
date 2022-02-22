@@ -90,3 +90,7 @@ tbody {
 .experienceId {
     display: none;
 }
+
+.barra-de-busqueda {
+    margin-bottom: 30px;
+}

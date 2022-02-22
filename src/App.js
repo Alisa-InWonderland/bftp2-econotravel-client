@@ -87,7 +87,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<ExperienceCatalog experiences={experiences} deleteExperience={deleteExperience}/>}/>
                     <Route path="/add" element={<ExperienceForm addExperience={addExperience}/>} />
-                    <Route path="/detail" element={<ExperienceDetails/>}/>
+                    <Route path="/:id" element={<ExperienceDetails/>}/>
                     <Route path="/reserve" element={<ReserveForm sendReserve={sendReserve} />} />
                     <Route path="/about" element={<About/>}/>
                     <Route path="/reservesList" element={<ReservesList reservas={reservas}/>}/>

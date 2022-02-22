@@ -3,18 +3,15 @@ import {Link} from "react-router-dom";
 import "../ExperienceCatalog/experienceCatalog.css"
 
 
-
-export function ExperienceCard({experiences, deleteExperience}) {
-
+export function ExperienceCard({experience, deleteExperience}) {
+    const { id, name, image, price, duration, description } = experience;
 
     return (
         <>
-                    {experiences.map((experience) =>
-
                         <div className="experience-card">
                             <div>
-                                <Link to="/detail">
-                                <img src={experience.image} className="image" alt="Image of Experience"/>
+                                <Link to={`/${id}`}>
+                                <img src={image} className="image" alt="Image of Experience"/>
                                 </Link>
                             </div>
 
@@ -22,12 +19,16 @@ export function ExperienceCard({experiences, deleteExperience}) {
                                 <tbody>
 
                                 <tr>
-                                    <td>{experience.name}</td>
-                                    <td>{experience.price}{'€'}</td>
+                                    <td>{name}</td>
+                                    <td>{price}{'€'}</td>
                                 </tr>
 
                                 <tr className='duration'>
-                                    <td>{experience.duration}</td>
+                                    <td>{duration}</td>
+                                </tr>
+
+                                <tr className='duration' hidden>
+                                    <td>{description}</td>
                                 </tr>
 
 
@@ -46,7 +47,6 @@ export function ExperienceCard({experiences, deleteExperience}) {
                                 </tbody>
                             </table>
                         </div>
-                    )}
         </>
     );
 
