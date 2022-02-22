@@ -439,4 +439,79 @@ textarea:hover {
     font-size: smaller;
 }
 
+/**************CONTACT*********************/
+.contact-page {
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e8a036;
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    padding: 20px;
+}
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+iframe {
+    border-radius: 10px;
+}
+
+.whatsapp {
+    width: 50%;
+    justify-content: center;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #57cc99;
+    background: #57cc99;
+    align-self: center;
+    margin-top: 25px;
+
+}
+.whatsapp:hover {
+    background: #fff;
+    color: #57cc99
+}
+.linkwp {
+    color: #ffffff;
+}
+.linkwp:hover {
+    color: #57cc99;
+}
+
+@media (max-width: 844px) {
+    iframe {
+        width: fit-content;
+    }
+    .contact-page {
+        justify-content: center;
+    }
+    .whatsapp {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
