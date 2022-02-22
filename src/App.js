@@ -10,6 +10,8 @@ import {ReserveForm} from "./Components/ReserveForm";
 import {Contact} from "./Components/Contact";
 import {getExperiences} from "./services/getExperiences";
 import {ReservesList} from "./Components/ReservesList/ReservesList";
+import {ExperienceCard} from "./Components/ExperienceCard/ExperienceCard";
+import {ExperienceDetails} from "./Components/ExperienceDetails/ExperienceDetails";
 import {API_URL} from "./services/settings";
 
 function App() {
@@ -83,12 +85,9 @@ function App() {
             <Header/>
             <main className="main">
                 <Routes>
-                    <Route path="/" element={<ExperienceCatalog experiences={experiences}
-                        deleteExperience={deleteExperience}/>} />
-
-                    <Route path="/add" element={<ExperienceForm addExperience={addExperience}
-                    />}
-                    />
+                    <Route path="/" element={<ExperienceCatalog experiences={experiences} deleteExperience={deleteExperience}/>}/>
+                    <Route path="/add" element={<ExperienceForm addExperience={addExperience}/>} />
+                    <Route path="/detail" element={<ExperienceDetails/>}/>
                     <Route path="/reserve" element={<ReserveForm sendReserve={sendReserve} />} />
                     <Route path="/about" element={<About/>}/>
                     <Route path="/reservesList" element={<ReservesList reservas={reservas}/>}/>
