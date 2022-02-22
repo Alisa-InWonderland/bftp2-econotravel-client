@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useNavigate} from "react-router-dom";
-
+import backgreserve from '../assets/backgreserve.png';
 
 export const ReserveForm = (props) => {
     let navigate = useNavigate();
@@ -29,9 +29,10 @@ export const ReserveForm = (props) => {
 
 
     return (
-
+<div className='section-form' style={{ backgroundImage: `url(${backgreserve})` }}>>
         <section className="form-section">
             <div className="form-wrapper">
+
                 <h1>Reservar Experiencia</h1>
                 <div className="form-container">
                     <form className="edit-form" onSubmit={enviarDatosDeReserva} action="">
@@ -111,6 +112,6 @@ export const ReserveForm = (props) => {
             </div>
 
         </section>
-
+</div>
     );
 }
