@@ -6,7 +6,7 @@ import {ExperienceForm} from "./Components/ExperienceForm";
 import {About} from "./Components/About";
 import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
-import {ReserveForm} from "./Components/ReserveForm";
+import {ReserveForm} from "./Components/ReserveForm/ReserveForm";
 import {Contact} from "./Components/Contact";
 import {getExperiences} from "./services/getExperiences";
 import {ReservesList} from "./Components/ReservesList/ReservesList";
