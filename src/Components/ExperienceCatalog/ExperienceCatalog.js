@@ -20,9 +20,10 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
 
                 <h1 className="catalog-title">Nuestras experiencias</h1>
 
-                <div className="barra-de-busqueda">
-                    <label htmlFor="experience"></label>
+                <div className="barra-de-busqueda-container">
+                    {/*<label htmlFor="experience"></label>*/}
                     <input
+                        className="barra-de-busqueda"
                         name="experience"
                         type="text"
                         onChange={getData}
