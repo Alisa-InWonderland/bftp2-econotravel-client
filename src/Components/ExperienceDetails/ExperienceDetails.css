@@ -1,0 +1,119 @@
+.details-card {
+    width: 500px;
+    height: 650px;
+    background-color: red;
+}
+
+.details-img-container {
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+}
+
+.details-img {
+    width: 500px;
+    height: 300px;
+}
+
+.price {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Volkhov, serif;
+    background-color: #FFAA05;
+}
+
+.title {
+    font-family: Poppins, sans-serif;
+    font-size: larger;
+}
+
+.description {
+    width: 500px;
+    font-family: Poppins, sans-serif;
+    font-size: smaller;
+}
+
+.type-container {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.e-place {
+    font-family: Volkhov, serif;
+
+}
+
+#place-type {
+    font-family: Volkhov, serif;
+}
+
+#place-icon {
+    width: 15px;
+    height: 15px;
+}
+
+#place-name {
+    font-family: Volkhov, serif;
+    font-size: smaller;
+}
+
+.e-duration {
+    display: flex;
+    flex-direction: column;
+}
+
+#duration {
+    font-family: Volkhov, serif;
+}
+
+#duration-time {
+    font-family: Volkhov, serif;
+}
+
+#duration-length {
+    font-family: Volkhov, serif;
+}
+
+.e-transport {
+    display: flex;
+    flex-direction: column;
+}
+
+#transport {
+    font-family: Volkhov, serif;
+}
+
+#transport-icon {
+    width: 15px;
+    height: 15px;
+}
+
+#transport-name {
+    font-family: Volkhov, serif;
+}
+
+.a11y-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.a11y-name {
+    font-family: Poppins, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+.a11y-description {
+    font-family: Poppins, sans-serif;
+    font-size: smaller;
+}
+
+.btn-reservation {
+    color: #ffffff;
+    background-color: #FFAA05;
+    font-family: Volkhov, serif;
+    font-size: large;
+    font-weight: bold;
+}

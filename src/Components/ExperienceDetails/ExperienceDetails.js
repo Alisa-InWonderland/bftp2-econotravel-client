@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import "./ExperienceDetails.css";
 
 export const ExperienceDetails = () => {
 
@@ -34,7 +34,7 @@ export const ExperienceDetails = () => {
             </div>
             <div className="a11y-container">
                 <span className="a11y-name">Accessibilidad:</span>
-                <span className="a11y-description"></span>
+                <span className="a11y-description">blablabla blablabla blablabla</span>
             </div>
             <button className="btn-reservation">Reservar!</button>
         </div>
