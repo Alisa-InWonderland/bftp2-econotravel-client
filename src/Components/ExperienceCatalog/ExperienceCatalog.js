@@ -6,15 +6,15 @@ import {ExperienceCard} from "../ExperienceCard/ExperienceCard";
 export function ExperienceCatalog({experiences, deleteExperience}) {
 
 
-    const [state, setState] = React.useState({ filter: "" });
+    const [state, setState] = React.useState({filter: ""});
 
     function getData(val) {
-        setState({ filter: val.target.value.toLowerCase() });
+        setState({filter: val.target.value.toLowerCase()});
     }
 
     return (
         <>
-            <CallToAction />
+            <CallToAction/>
 
             <section className='experienceCatalog'>
 
@@ -32,22 +32,24 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
                 </div>
 
                 <div className="container-card">
-                {experiences.map((experience) => {
-                    if (
-                        experience.name.toLowerCase().indexOf(state.filter) >= 0 ||
-                        state.filter.length === 0
-                    ) {
-                        return <ExperienceCard key={experience.id} experience={experience} deleteExperience={deleteExperience}/>;
-                    }
-                    if (
-                        experience.duration.toLowerCase().indexOf(state.filter) >= 0 ||
-                        state.filter.length === 0
-                    ) {
-                        return <ExperienceCard key={experience.id} experience={experience} deleteExperience={deleteExperience}/>;
-                    }
+                    {experiences.map((experience) => {
+                        if (
+                            experience.name.toLowerCase().indexOf(state.filter) >= 0 ||
+                            state.filter.length === 0
+                        ) {
+                            return <ExperienceCard key={experience.id} experience={experience}
+                                                   deleteExperience={deleteExperience}/>;
+                        }
+                        if (
+                            experience.duration.toLowerCase().indexOf(state.filter) >= 0 ||
+                            state.filter.length === 0
+                        ) {
+                            return <ExperienceCard key={experience.id} experience={experience}
+                                                   deleteExperience={deleteExperience}/>;
+                        }
 
-                    return "";
-                })}
+                        return "";
+                    })}
                 </div>
 
             </section>
