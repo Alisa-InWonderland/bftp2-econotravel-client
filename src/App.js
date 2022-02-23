@@ -6,7 +6,7 @@ import {ExperienceForm} from "./Components/ExperienceForm";
 import {About} from "./Components/About";
 import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
-import {ReserveForm} from "./Components/ReserveForm";
+import {ReserveForm} from "./Components/ReserveForm/ReserveForm";
 import {Contact} from "./Components/Contact";
 import {getExperiences} from "./services/getExperiences";
 import {ReservesList} from "./Components/ReservesList/ReservesList";
@@ -87,7 +87,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<ExperienceCatalog experiences={experiences} deleteExperience={deleteExperience}/>}/>
                     <Route path="/add" element={<ExperienceForm addExperience={addExperience}/>} />
-                    <Route path="/detail" element={<ExperienceDetails/>}/>
+                    <Route path="/:id" element={<ExperienceDetails/>}/>
                     <Route path="/reserve" element={<ReserveForm sendReserve={sendReserve} />} />
                     <Route path="/about" element={<About/>}/>
                     <Route path="/reservesList" element={<ReservesList reservas={reservas}/>}/>
