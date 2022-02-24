@@ -29,7 +29,7 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
                         name="experience"
                         type="text"
                         onChange={getData}
-                        placeholder="Busca una experiencia" style={{backgroundImage: `url(${lupa})`}}
+                        placeholder="Busca una experiencia" // style={{backgroundImage: `url(${lupa})`}}
 
                     />
                     {/*<img className="lupaImg" src={lupa} alt={"lupa"}/>*/}

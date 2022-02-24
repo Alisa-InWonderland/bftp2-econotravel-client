@@ -3,6 +3,7 @@ import twitter from "../../assets/twitter.png";
 import instagram from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png";
 import "./footer.css"
+import {Link} from "react-router-dom";
 
 
 export const Footer = () => {
@@ -18,13 +19,13 @@ export const Footer = () => {
 
                     <ul className="bottomNavBar-links">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Sobre nosotros</a>
+                            <Link className="nav-link" to="/about">Sobre nosotros</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contactos</a>
+                            <Link className="nav-link" to="/contact">Contacto</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Experiencias</a>
+                            <Link className="nav-link" to="/">Experiencias</Link>
                         </li>
                     </ul>
 
