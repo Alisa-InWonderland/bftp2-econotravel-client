@@ -93,7 +93,10 @@ tbody {
 }
 
 .barra-de-busqueda-container {
+    width: 100%;
     margin-bottom: 40px;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
 }
 
 input {
@@ -106,5 +109,9 @@ input {
     padding: 15px 12px;
     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lupaImg {
+width: 3%;
 }
 

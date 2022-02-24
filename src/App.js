@@ -21,7 +21,6 @@ function App() {
     const [reservas, setReservas] = useState([]);
 
 
-
     useEffect(() => {
         if (requiresUpdate) {
             getExperiences()
