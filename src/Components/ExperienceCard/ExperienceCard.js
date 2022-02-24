@@ -1,10 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "../ExperienceCatalog/experienceCatalog.css"
-import {useState} from "react";
+
 
 
 export function ExperienceCard({experience, deleteExperience}) {
+
     const { id, name, image, price, duration, description } = experience;
 
 
@@ -56,6 +57,13 @@ export function ExperienceCard({experience, deleteExperience}) {
                                             </td>
                                     {/*    </>*/}
                                     {/*}*/}
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <button className="btn-orange">
+                                        <Link className="btn-orange reservar" to="/reserve">Reservar</Link>
+                                    </button>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
