@@ -63,7 +63,7 @@ export const ExperienceDetails = () => {
                                 <button className="btn-reservation">
                                     <Link className="btn-orange-link" to="/reserve">Reservar</Link>
                                 </button>
-                                <button className="btn-orange borrar"><a className="btn-orange-link"
+                                <button className="btn-reservation borrar"><a className="btn-orange-link"
                                                                          onClick={() => payExperience(experience.payment)}>Pagar</a>
                                 </button>
                             </div>

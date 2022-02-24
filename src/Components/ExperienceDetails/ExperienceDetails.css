@@ -82,8 +82,13 @@
     display: flex;
     flex-direction: column;
     padding: 5px;
-
-
+    background-color: #4b7f55;
+    border: black solid 2px;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    justify-content: space-evenly;
 }
 
 #place-type {
@@ -104,6 +109,13 @@
     display: flex;
     flex-direction: column;
     padding: 5px;
+    background-color: #E8A136;
+    border: black solid 2px;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    justify-content: space-evenly;
 }
 
 #duration {
@@ -122,6 +134,13 @@
     display: flex;
     flex-direction: column;
     padding: 5px;
+    background-color: #4B5A7F;
+    border: black solid 2px;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    justify-content: space-evenly;
 }
 
 #transport {
@@ -155,9 +174,14 @@
 }
 
 .btn-reservation {
+    width: 200px;
     color: #ffffff;
     background-color: #FFAA05;
     font-family: Volkhov, serif;
     font-size: large;
     font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
 }
