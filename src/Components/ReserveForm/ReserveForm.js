@@ -108,14 +108,6 @@ export const ReserveForm = (props) => {
                                 </select>
                             </div>
 
-                            <div className="form-group">
-                                <label htmlFor="">Pago</label>
-                                <input type="number"
-                                       className="form-control"
-                                       onChange={handleInputChange}
-                                       name="payment"
-                                       />
-                            </div>
 
                             <div className="form-group">
                                 <label htmlFor="">Comentarios</label>
@@ -126,7 +118,8 @@ export const ReserveForm = (props) => {
 
 
                             <div className="btn-edit-container">
-                                <button type="submit" className="btn-edit">Enviar</button>
+                                <button type="submit" className="btn-edit"><a className="btn-orange-link" href="https://buy.stripe.com/5kAaGC3bKaFB80MaEH" target="_blank">Reservar y Pagar</a>
+                                </button>
                             </div>
                         </form>
                     </div>
