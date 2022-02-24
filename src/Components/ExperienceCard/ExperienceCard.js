@@ -1,10 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "../ExperienceCatalog/experienceCatalog.css"
+import {useState} from "react";
 
 
 export function ExperienceCard({experience, deleteExperience}) {
     const { id, name, image, price, duration, description } = experience;
+
 
     return (
         <>
@@ -33,16 +35,27 @@ export function ExperienceCard({experience, deleteExperience}) {
 
 
                                 <tr className='btn-card-container'>
-                                    <td>
-                                        <button className="btn-orange editar">
-                                            <Link className="btn-orange-link" to="/add" state={{ data: experience}}>Editar</Link>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <button className="btn-orange borrar"><a className="btn-orange-link"
-                                                                                 onClick={() => deleteExperience(experience.id)}>Borrar</a>
-                                        </button>
-                                    </td>
+                                    {/*{loggedIn ?*/}
+                                    {/*    <td>*/}
+                                    {/*        <button className="btn-orange editar">*/}
+                                    {/*            <Link className="btn-orange-link" to="/reserve">Reservar</Link>*/}
+                                    {/*        </button>*/}
+                                    {/*    </td>*/}
+                                    {/*    :*/}
+                                    {/*    <>*/}
+                                            <td>
+                                                <button className="btn-orange editar">
+                                                    <Link className="btn-orange-link" to="/add"
+                                                          state={{data: experience}}>Editar</Link>
+                                                </button>
+                                            </td>
+                                            <td>
+                                            <button className="btn-orange borrar"><a className="btn-orange-link"
+                                            onClick={() => deleteExperience(experience.id)}>Borrar</a>
+                                            </button>
+                                            </td>
+                                    {/*    </>*/}
+                                    {/*}*/}
                                 </tr>
                                 </tbody>
                             </table>
