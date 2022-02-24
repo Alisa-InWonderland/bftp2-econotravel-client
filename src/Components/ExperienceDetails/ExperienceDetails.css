@@ -5,21 +5,21 @@
 }
 
 .details-card {
-    width: 700px;
+    width: 750px;
     height: 650px;
     border-radius: 25px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .details-img-container {
-    width: 700px;
+    width: 750px;
     height: 300px;
     background-color: blue;
     border-radius: 25px 25px 0 0;
 }
 
 .details-img {
-    width: 700px;
+    width: 750px;
     height: 300px;
     border-radius: 25px 25px 0 0;
     justify-content: center;
@@ -40,8 +40,9 @@
 
 .title {
     font-family: Poppins, sans-serif;
-    font-size: larger;
-    margin-top: 15px;
+    font-size: 14px;
+    margin: 20px 0 5px 25px;
+    text-align: start;
 
 }
 
@@ -55,11 +56,13 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin: 0 10px 20px 25px;
 }
 
 .description-title {
     font-family: Poppins, sans-serif;
     font-size: smaller;
+    text-align: start;
 
 }
 
@@ -68,6 +71,8 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin: 0 25px 20px 10px;
+    justify-content: flex-end;
 }
 
 .type-container {
@@ -166,16 +171,18 @@
     font-family: Poppins, sans-serif;
     font-size: small;
     font-weight: bold;
+    text-align: start;
 }
 
 .a11y-description {
     font-family: Poppins, sans-serif;
-    font-size: smaller;
+    font-size: 11px;
+    text-align: start;
+    margin-bottom: 10px;
 }
 
 .btn-reservation {
     width: 200px;
-    color: #ffffff;
     background-color: #FFAA05;
     font-family: Volkhov, serif;
     font-size: large;
@@ -184,4 +191,5 @@
     border: none;
     margin-bottom: 5px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    align-self: center;
 }

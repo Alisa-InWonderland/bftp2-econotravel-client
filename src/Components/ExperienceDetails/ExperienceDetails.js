@@ -3,6 +3,8 @@ import {Link, useParams} from "react-router-dom";
 import {getExperienceById} from "../../services/getExperienceById";
 import {useEffect, useState} from "react";
 import "./ExperienceDetails.css";
+import "../../assets/mountains_sun_icon.png";
+import "../../assets/mountain-bike.png";
 
 
 export const ExperienceDetails = () => {
@@ -37,7 +39,7 @@ export const ExperienceDetails = () => {
                                 <div className="type-container">
                                     <div className="e-place">
                                         <span id="place-type">Tipo</span>
-                                        <img id="place-icon" src="" alt="place icon"/>
+                                        <img id="place-icon" src="../../assets/mountains_sun_icon.png" alt="place icon"/>
                                         <span id="place-name">Montaña</span>
                                     </div>
                                     <div className="e-duration">
@@ -47,7 +49,7 @@ export const ExperienceDetails = () => {
                                     </div>
                                     <div className="e-transport">
                                         <span id="transport">Transporte</span>
-                                        <img id="transport-icon" src="" alt="transport icon"/>
+                                        <img id="transport-icon" src="../../assets/mountain-bike.png" alt="transport icon"/>
                                         <span id="transport-name">Bicicleta</span>
                                     </div>
                                 </div>
@@ -58,7 +60,7 @@ export const ExperienceDetails = () => {
                                 <button className="btn-reservation">
                                     <Link className="btn-orange-link" to="/reserve">Reservar</Link>
                                 </button>
-                                <button className="btn-orange borrar">
+                                <button className="btn-reservation borrar">
                                     <a className="btn-orange-link" href={experience.payment} target="_blank">Pagar</a>
                                 </button>
 
