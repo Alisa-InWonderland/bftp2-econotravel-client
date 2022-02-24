@@ -49,3 +49,8 @@
     gap: 80px;
 }
 
+@media (max-width: 844px){
+    .bottomNavBar-links {
+        display: block;
+    }
+}

@@ -58,7 +58,7 @@ export function ExperienceCard({experience, deleteExperience}) {
                                     {/*    </>*/}
                                     {/*}*/}
                                 </tr>
-                                <tr>
+                                <tr className='reservar'>
                                     <td>
                                     <button className="btn-orange">
                                         <Link className="btn-orange reservar" to="/reserve">Reservar</Link>

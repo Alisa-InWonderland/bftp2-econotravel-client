@@ -95,3 +95,9 @@
     max-width: 100%;
     justify-items: left;
 }
+
+@media (max-width: 844px) {
+    .titles p {
+        width: 200%;
+    }
+}

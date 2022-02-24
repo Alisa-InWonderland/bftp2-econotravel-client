@@ -43,3 +43,25 @@
     border-radius: 5px;
     padding: 3px 7px;
 }
+
+@media (max-width: 844px) {
+    .logoImg {
+        width: 70%;
+    }
+    .topNavBar {
+        display: block;
+    }
+    .header {
+        text-align: -webkit-center;
+    }
+    .decoreImg {
+        max-width: none;
+    }
+    .title-decore {
+        position: absolute;
+    }
+    .barra-de-busqueda {
+        width: 100%;
+        text-align: -webkit-match-parent;
+    }
+}

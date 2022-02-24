@@ -14,7 +14,7 @@ export const ReserveForm = (props) => {
         ninos: null,
         email: '',
         experiencia: '',
-        comentarios: ''
+        comentarios: '',
     })
 
     const handleInputChange = (event) => {
@@ -106,6 +106,15 @@ export const ReserveForm = (props) => {
                                     <option value="Arte en la montaña sagrada">Arte en la montaña sagrada</option>
                                     <option value="VALL DE NÚRIA: Un valle único">VALL DE NÚRIA: Un valle único</option>
                                 </select>
+                            </div>
+
+                            <div className="form-group">
+                                <label htmlFor="">Pago</label>
+                                <input type="number"
+                                       className="form-control"
+                                       onChange={handleInputChange}
+                                       name="payment"
+                                       />
                             </div>
 
                             <div className="form-group">

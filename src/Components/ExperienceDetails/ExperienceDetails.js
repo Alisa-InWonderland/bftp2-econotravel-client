@@ -17,13 +17,6 @@ export const ExperienceDetails = () => {
     }, [params.id])
 
 
-    function payExperience({pago}) {
-
-        const {payment} = pago;
-
-    }
-
-
     return (
       <>
       {experience && (
@@ -58,8 +51,7 @@ export const ExperienceDetails = () => {
             <button className="btn-reservation">
                 <Link className="btn-orange-link" to="/reserve">Reservar</Link>
             </button>
-            <button className="btn-orange borrar"><a className="btn-orange-link"
-                                                     onClick={() => payExperience(experience.payment)}>Pagar</a>
+            <button className="btn-orange borrar"><a className="btn-orange-link" href={experience.payment}>Pagar</a>
             </button>
         </div>
           

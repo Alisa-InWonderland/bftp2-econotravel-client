@@ -12,9 +12,7 @@ export const Hero = () => {
                     <h1>Viaja, <span className="title-decore">disfruta</span><br/>
                         y vive nuevas<br/>
                         experiencias</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur<br/>
-                        adipisicing elit. Ea excepturi exercitationem<br/>
-                        illum, in laborum nostrum.</p>
+                    <p>Cómete el mundo con Econotravel y planifica a medida tus fines de semana. Escápate con tu pareja o con la familia, disfruta de un sin fin de experiencias que te esperan. ¡Sonríe, están empezando tus vacaciones!</p>
 
                     <button className="btn-orange">
                         <Link className="btn-orange-link" to="/reserve">Reservar experiencia</Link>
