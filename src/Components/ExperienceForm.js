@@ -15,6 +15,7 @@ export const ExperienceForm = (props) => {
         price: null,
         duration: '',
         accessibility: '',
+        payment:'',
         tags: ''
     })
 
@@ -78,6 +79,14 @@ export const ExperienceForm = (props) => {
                             <label htmlFor="">Accesibilidad</label>
                             <textarea value={datos.accessibility}
                                       name="accessibility" id="" cols="50" rows="5"
+                                      className="form-control"
+                                      onChange={handleInputChange}/>
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="">Pago</label>
+                            <textarea value={datos.payment}
+                                      name="payment" id="" cols="50" rows="5"
                                       className="form-control"
                                       onChange={handleInputChange}/>
                         </div>
