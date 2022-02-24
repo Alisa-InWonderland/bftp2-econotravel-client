@@ -2,6 +2,8 @@ import React from "react";
 import {CallToAction} from "../CallToAction";
 import "./experienceCatalog.css"
 import {ExperienceCard} from "../ExperienceCard/ExperienceCard";
+import lupa from "../../assets/lupa.png";
+
 
 export function ExperienceCatalog({experiences, deleteExperience}) {
 
@@ -21,14 +23,15 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
                 <h1 className="catalog-title">Nuestras experiencias</h1>
 
                 <div className="barra-de-busqueda-container">
-                    {/*<label htmlFor="experience"></label>*/}
                     <input
                         className="barra-de-busqueda"
                         name="experience"
                         type="text"
                         onChange={getData}
                         placeholder="Busca una experiencia"
+
                     />
+                    {/*<img className="lupaImg" src={lupa} alt={"lupa"}/>*/}
                 </div>
 
                 <div className="container-card">

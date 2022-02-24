@@ -19,41 +19,6 @@ export const ExperienceDetails = () => {
 
 
     return (
-// <<<<<<< HEAD
-//         <>
-//         {experience && (
-//         <div className="details-container">
-//             <div>
-//                 <img src={experience.image} className="image" alt="Image of Experience"/>
-//             </div>
-//
-//             <table className="experience-table">
-//                 <tbody>
-//
-//                 <tr>
-//                     <td>{experience.name}</td>
-//                     <td>{experience.price}€</td>
-//                 </tr>
-//
-//                 <tr className='duration'>
-//                     <td>{experience.duration}</td>
-//                 </tr>
-//
-//                 <tr className='duration'>
-//                     <td>{experience.description}</td>
-//                 </tr>
-//
-//                 <tr className='btn-card-container'>
-//                     <td>
-//                         <button className="btn-orange editar">
-//                             <Link className="btn-orange-link" to="/reserve">Reservar</Link>
-//                         </button>
-//                     </td>
-//
-//                 </tr>
-//                 </tbody>
-//             </table>
-// =======
       <>
       {experience && (
         <div className="details-card">
@@ -84,7 +49,9 @@ export const ExperienceDetails = () => {
                 <span className="a11y-name">Accessibilidad:</span>
                 <span className="a11y-description">{experience.accessibility}</span>
             </div>
-            <button className="btn-reservation">Reservar!</button>
+            <button className="btn-reservation">
+                <Link className="btn-orange-link" to="/reserve">Reservar</Link>
+            </button>
         </div>
 
         )}
