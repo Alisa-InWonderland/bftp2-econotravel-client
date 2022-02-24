@@ -1,0 +1,51 @@
+
+.footer {
+    display: flex;
+    flex-shrink: 0;
+    height: 80px;
+    margin-top: 20px;
+
+}
+
+.bottomNavBar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.bottomNavBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomNavBar-brand {
+    text-align: left;
+}
+
+.bottomNavBar-brand p {
+    font-size: 12px;
+}
+
+.social {
+    display: flex;
+    gap: 5px;
+}
+
+.icono-rs {
+    width: 25px;
+}
+
+.copyright {
+    font-size: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.bottomNavBar-links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+

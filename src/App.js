@@ -1,16 +1,15 @@
 import './App.css';
-import  { Header } from './Components/Header'
-import  { Footer } from './Components/Footer'
+import  { Header } from './Components/Header/Header'
+import  { Footer } from './Components/Footer/Footer'
 import {ExperienceCatalog} from "./Components/ExperienceCatalog/ExperienceCatalog";
-import {ExperienceForm} from "./Components/ExperienceForm";
-import {About} from "./Components/About";
+import {ExperienceForm} from "./Components/ExperienceForm/ExperienceForm";
+import {About} from "./Components/About/About";
 import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
 import {ReserveForm} from "./Components/ReserveForm/ReserveForm";
-import {Contact} from "./Components/Contact";
+import {Contact} from "./Components/Contact/Contact";
 import {getExperiences} from "./services/getExperiences";
 import {ReservesList} from "./Components/ReservesList/ReservesList";
-import {ExperienceCard} from "./Components/ExperienceCard/ExperienceCard";
 import {ExperienceDetails} from "./Components/ExperienceDetails/ExperienceDetails";
 import {API_URL} from "./services/settings";
 
@@ -48,16 +47,6 @@ function App() {
         ).then(_ => setRequiresUpdate(true))
 
     }
-    const editExperience = (experience) => {
-        fetch("http://localhost:8080/api/experiences/edit/{id}",
-            {
-                method: 'PUT',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(experience)
-            }
-        ).then(_ => setRequiresUpdate(true))
-
-    }
 
     const deleteExperience = (id) => {
         fetch(`http://localhost:8080/api/experiences/delete/${id}`,
@@ -67,6 +56,7 @@ function App() {
         ).then(_ => setRequiresUpdate(true))
 
     }
+
     const sendReserve = (reservas) => {
         return fetch("http://localhost:8080/api/reservas",
             {

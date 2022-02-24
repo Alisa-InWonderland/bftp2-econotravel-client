@@ -1,5 +1,5 @@
 import React from "react";
-import {CallToAction} from "../CallToAction";
+import {Hero} from "../Hero/Hero";
 import "./experienceCatalog.css"
 import {ExperienceCard} from "../ExperienceCard/ExperienceCard";
 import lupa from "../../assets/lupa.png";
@@ -17,7 +17,7 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
 
     return (
         <>
-            <CallToAction/>
+            <Hero/>
 
             <section className='experienceCatalog'>
 
