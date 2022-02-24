@@ -44,6 +44,18 @@ export function ExperienceCard({experience, deleteExperience}) {
                                         </button>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                    <button className="btn-orange">
+                                        <Link className="btn-orange reservar" to="/reserve">Reservar</Link>
+                                    </button>
+                                    </td>
+                                    <td>
+                                        <button className="btn-orange pagar"><a className="btn-orange-link"
+                                                                                href='https://buy.stripe.com/5kA2a68w47tp0yk28f'>Pagar</a>
+                                        </button>
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
