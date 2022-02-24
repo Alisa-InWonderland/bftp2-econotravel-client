@@ -2,20 +2,18 @@
 
 
 
-.form-wrapper {
+.experience-form-wrapper {
     margin-bottom: 50px;
+
 }
-.section-form{
+.section-experience-form{
     display: flex;
-    justify-content: start;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    justify-content: center;
     padding: 20px;
+
 }
 
-.form-section {
+.experience-form-section {
     width: 55%;
     background-color: #e8a036;
     padding: 20px 20px 2px 20px;
@@ -24,7 +22,7 @@
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-.form-section h1 {
+.experience-form-section h1 {
     font-family: 'Volkhov', serif;
     font-size: 30px;
     font-weight: 700;
@@ -33,13 +31,13 @@
     text-align: center;
 }
 
-.form-group {
+.experience-form-group {
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.form-group input {
+.experience-form-group input {
     width: 60%;
     font-family: 'Poppins', sans-serif;
     height: 25px;
@@ -54,8 +52,8 @@
     justify-content: space-between;
 }
 
-.form-group input:hover {
-
+.experience-form-group input:hover {
+    cursor: pointer;
     border-style: solid;
     border-width: 2px;
     border-color: #4b7f55;
@@ -74,13 +72,13 @@ textarea, select {
 }
 
 textarea:hover {
-
+    cursor: pointer;
     border-style: solid;
     border-width: 2px;
     border-color: #4b7f55;
 }
 
-.add-form {
+.add-experience-form {
     margin-bottom: 20px;
 }
 
@@ -135,10 +133,4 @@ textarea:hover {
 
 .btn-edit:active {
     top: 2px;
-}
-
-@media(max-width: 844px) {
-    .form-section {
-        width: 100%;
-    }
 }

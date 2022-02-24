@@ -1,5 +1,6 @@
 import React from "react";
-import fundadora from "../assets/fundadora.png";
+import fundadora from "../../assets/fundadora.png";
+import "./about.css"
 
 export const About = () => {
     return (

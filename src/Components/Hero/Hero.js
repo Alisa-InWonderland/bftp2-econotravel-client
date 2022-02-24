@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "../assets/ImageNew.png";
-import Decore from "../assets/Decore.png";
+import Image from "../../assets/ImageNew.png";
+import Decore from "../../assets/Decore.png";
 import {Link} from "react-router-dom";
+import "./hero.css"
 
-export const CallToAction = () => {
+export const Hero = () => {
     return (
             <section className="hero">
                 <div className="titles">

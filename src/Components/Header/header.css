@@ -1,0 +1,45 @@
+
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+    z-index: 20;
+}
+
+
+
+
+
+
+
+.topNavBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNavBar-brand {
+    max-width: 80px;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+.topNavBar ul {
+    padding-right: 50px;
+
+}
+
+.topNavBar-links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.topNavBar-links li:last-child {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3px 7px;
+}

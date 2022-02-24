@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useLocation, useNavigate} from "react-router-dom";
+import "./experienceForm.css"
 
 
 export const ExperienceForm = (props) => {
@@ -7,7 +8,7 @@ export const ExperienceForm = (props) => {
     let navigate = useNavigate();
 
     const location = useLocation();
-    const  data  = location.state ? location.state.data : null;
+    const data = location.state ? location.state.data : null;
 
     const [datos, setDatos] = useState(data || {
         name: '',
@@ -15,6 +16,7 @@ export const ExperienceForm = (props) => {
         price: null,
         duration: '',
         accessibility: '',
+        payment: '',
         tags: ''
     })
 
@@ -33,67 +35,77 @@ export const ExperienceForm = (props) => {
 
     return (
 
-        <section className="form-section">
-            <div className="form-wrapper">
-                <h1>{ data ? 'Editar experiencia' : 'Nueva experiencia'}</h1>
-                <div className="form-container">
-                    <form className="edit-form" onSubmit={enviarDatos} action="">
+        <section className="experience-form-section">
+            <div className="experience-form-wrapper">
+                <h1>{data ? 'Editar experiencia' : 'Nueva experiencia'}</h1>
+                <div className="experience-form-container">
+                    <form className="edit-experience-form" onSubmit={enviarDatos} action="">
 
-                        <div className="form-group">
+                        <div className="experience-form-group">
                             <label htmlFor="">Nombre de la experiencia</label>
                             <input type="text"
-                                   className="form-control"
+                                   className="experience-form-control"
                                    onChange={handleInputChange}
                                    name="name"
                                    value={datos.name}/>
                         </div>
 
-                        <div className="form-group">
+                        <div className="experience-form-group">
                             <label htmlFor="">Descripción</label>
                             <textarea value={datos.description}
                                       name="description" id="" cols="50" rows="5"
-                                      className="form-control"
+                                      className="experience-form-control"
                                       onChange={handleInputChange}/>
                         </div>
 
-                        <div className="form-group">
+                        <div className="experience-form-group">
                             <label htmlFor="">Precio p/p</label>
                             <input type="text"
-                                   className="form-control"
+                                   className="experience-form-control"
                                    onChange={handleInputChange}
                                    name="price"
                                    value={datos.price}/>
                         </div>
 
-                        <div className="form-group">
+                        <div className="experience-form-group">
                             <label htmlFor="">Duración</label>
                             <input type="text"
-                                   className="form-control"
+                                   className="experience-form-control"
                                    onChange={handleInputChange}
                                    name="duration"
                                    value={datos.duration}/>
                         </div>
 
-                        <div className="form-group">
+                        <div className="experience-form-group">
                             <label htmlFor="">Accesibilidad</label>
                             <textarea value={datos.accessibility}
                                       name="accessibility" id="" cols="50" rows="5"
+                                      className="experience-form-control"
+                                      onChange={handleInputChange}/>
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="">Pago</label>
+                            <textarea value={datos.payment}
+                                      name="payment" id="" cols="50" rows="5"
                                       className="form-control"
                                       onChange={handleInputChange}/>
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="">Tags</label>
-                            <input type="text"
-                                   className="form-control"
-                                   onChange={handleInputChange}
-                                   value={datos.tags}
-                                   name="tags"/>
-                        </div>
+                            <div className="experience-form-group">
+                                <label htmlFor="">Tags</label>
+                                <input type="text"
+                                       className="experience-form-control"
+                                       onChange={handleInputChange}
+                                       value={datos.tags}
+                                       name="tags"/>
+                            </div>
 
 
-                        <div className="btn-edit-container">
-                            <button type="submit" className="btn-edit">Guardar</button>
+                            <div className="btn-edit-container">
+                                <button type="submit" className="btn-edit">Guardar</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -101,7 +113,7 @@ export const ExperienceForm = (props) => {
 
         </section>
 
-    );
+);
 }
 
 
