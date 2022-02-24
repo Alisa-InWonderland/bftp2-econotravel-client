@@ -3,6 +3,7 @@ import {Hero} from "../Hero/Hero";
 import "./experienceCatalog.css"
 import {ExperienceCard} from "../ExperienceCard/ExperienceCard";
 import lupa from "../../assets/lupa.png";
+import backgreserve from "../../assets/backgreserve.png";
 
 
 export function ExperienceCatalog({experiences, deleteExperience}) {
@@ -28,7 +29,7 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
                         name="experience"
                         type="text"
                         onChange={getData}
-                        placeholder="Busca una experiencia"
+                        placeholder="Busca una experiencia" style={{backgroundImage: `url(${lupa})`}}
 
                     />
                     {/*<img className="lupaImg" src={lupa} alt={"lupa"}/>*/}

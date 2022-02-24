@@ -103,7 +103,8 @@ export const ReserveForm = (props) => {
                                         Modernista de noche
                                     </option>
                                     <option value="Del huerto a la mesa">Del huerto a la mesa</option>
-                                    <option value="Arte en la montaña sagrada ">Arte en la montaña sagrada</option>
+                                    <option value="Arte en la montaña sagrada">Arte en la montaña sagrada</option>
+                                    <option value="VALL DE NÚRIA: Un valle único">VALL DE NÚRIA: Un valle único</option>
                                 </select>
                             </div>
 
