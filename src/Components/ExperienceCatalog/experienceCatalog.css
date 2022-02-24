@@ -115,3 +115,12 @@ input {
 width: 3%;
 }
 
+.reservar {
+    align-self: center;
+
+}
+
+.btn-orange {
+    padding: 4px 7px;
+}
+

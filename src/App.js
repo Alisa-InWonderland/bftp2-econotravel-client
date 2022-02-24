@@ -18,6 +18,7 @@ function App() {
     const [experiences, setExperiences] = useState([]);
     const [requiresUpdate, setRequiresUpdate] = useState(true);
     const [reservas, setReservas] = useState([]);
+    const [loggedIn, setLoggedIn] = useState(false)
 
 
     useEffect(() => {
@@ -71,10 +72,10 @@ function App() {
 
     return (
         <div className="App">
-            <Header/>
+            <Header loggedIn={loggedIn} onLoginChange={(value) => setLoggedIn(value)}/>
             <main className="main">
                 <Routes>
-                    <Route path="/" element={<ExperienceCatalog experiences={experiences} deleteExperience={deleteExperience}/>}/>
+                    <Route path="/" element={<ExperienceCatalog loggedIn={loggedIn} experiences={experiences} deleteExperience={deleteExperience}/>}/>
                     <Route path="/add" element={<ExperienceForm addExperience={addExperience}/>} />
                     <Route path="/:id" element={<ExperienceDetails/>}/>
                     <Route path="/reserve" element={<ReserveForm sendReserve={sendReserve} />} />

@@ -14,7 +14,7 @@ export const ReserveForm = (props) => {
         ninos: null,
         email: '',
         experiencia: '',
-        comentarios: ''
+        comentarios: '',
     })
 
     const handleInputChange = (event) => {
@@ -108,6 +108,7 @@ export const ReserveForm = (props) => {
                                 </select>
                             </div>
 
+
                             <div className="form-group">
                                 <label htmlFor="">Comentarios</label>
                                 <textarea value={reserveData.comentarios} name="comentarios" id="" cols="50" rows="5"
@@ -117,7 +118,8 @@ export const ReserveForm = (props) => {
 
 
                             <div className="btn-edit-container">
-                                <button type="submit" className="btn-edit">Enviar</button>
+                                <button type="submit" className="btn-edit"><a className="btn-orange-link" href="https://buy.stripe.com/5kAaGC3bKaFB80MaEH" target="_blank">Reservar y Pagar</a>
+                                </button>
                             </div>
                         </form>
                     </div>

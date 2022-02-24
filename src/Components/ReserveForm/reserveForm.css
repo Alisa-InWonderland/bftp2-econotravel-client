@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Rubik+Beastly&family=Volkhov:wght@700&display=swap');
 
 
-
 .form-wrapper {
     margin-bottom: 50px;
 }
-.section-form{
+
+.section-form {
     display: flex;
     justify-content: start;
     -webkit-background-size: cover;
@@ -20,8 +20,8 @@
     background-color: #e8a036;
     padding: 20px 20px 2px 20px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .form-section h1 {
@@ -48,8 +48,8 @@
     padding: 5px;
     margin-left: 25px;
     background-color: #ccc7c7;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-between;
 }
@@ -68,8 +68,8 @@ textarea, select {
     border-radius: 5px;
     width: 60%;
     overflow: hidden;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     border: 1px solid #ccc7c7;
 }
 
@@ -109,7 +109,7 @@ textarea:hover {
     outline: none;
     border-radius: 5px;
     border: none;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
     z-index: 1;
     margin-top: 15px;
 }
@@ -127,7 +127,7 @@ textarea:hover {
     height: 100%;
     top: 0;
     z-index: -1;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
     transition: all 0.3s ease;
     background-color: #38603f;
     right: 0;
@@ -137,8 +137,13 @@ textarea:hover {
     top: 2px;
 }
 
-@media(max-width: 844px) {
+@media (max-width: 844px) {
     .form-section {
         width: 100%;
+    }
+}
+@media(min-width: 845px) and (max-width: 1180px) {
+    .section-form {
+        background-position: right;
     }
 }
