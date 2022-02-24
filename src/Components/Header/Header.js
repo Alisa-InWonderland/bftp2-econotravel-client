@@ -27,7 +27,7 @@ export const Header = ({loggedIn, onLoginChange}) => {
 
                         <>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/reserve">Reserva</Link>
+                                <Link className="nav-link" id="reserve-link" to="/reserve">Reserva</Link>
                             </li>
 
                             <li className="nav-item">
