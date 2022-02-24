@@ -26,7 +26,7 @@ export function ReservesList({reservas}) {
                             </tr>
 
                             {reservas.map(reserva =>
-                            <tr className='reserva-table-row'>
+                            <tr className='reserva-table-row' key={reserva.id}>
                                  <td className="reserva-td">{reserva.id}</td>
                                  <td className="reserva-td">{reserva.nombre}</td>
                                  <td className="reserva-td">{reserva.telefono}</td>
