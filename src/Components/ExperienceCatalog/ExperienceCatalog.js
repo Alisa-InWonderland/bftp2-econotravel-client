@@ -6,7 +6,7 @@ import lupa from "../../assets/lupa.png";
 import backgreserve from "../../assets/backgreserve.png";
 
 
-export function ExperienceCatalog({experiences, deleteExperience}) {
+export function ExperienceCatalog({experiences, deleteExperience, loggedIn}) {
 
 
     const [state, setState] = React.useState({filter: ""});
@@ -42,7 +42,7 @@ export function ExperienceCatalog({experiences, deleteExperience}) {
                             state.filter.length === 0
                         ) {
                             return <ExperienceCard key={experience.id} experience={experience}
-                                                   deleteExperience={deleteExperience}/>;
+                                                   deleteExperience={deleteExperience} loggedIn={loggedIn}/>;
                         }
                         if (
                             experience.duration.toLowerCase().indexOf(state.filter) >= 0 ||

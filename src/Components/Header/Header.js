@@ -4,12 +4,12 @@ import logoEconotravel from '../../assets/logoEconotravel1.png';
 import {Link} from "react-router-dom";
 import "./header.css"
 
-export const Header = () => {
+export const Header = ({loggedIn, onLoginChange}) => {
 
-    const [loggedIn, setLoggedIn] = useState(true);
+
 
     const onLoggedin = () => {
-        setLoggedIn(!loggedIn)
+        onLoginChange(!loggedIn)
     }
 
     return (
@@ -39,7 +39,7 @@ export const Header = () => {
                             </li>
 
                             <li className="nav-item">
-                                <Link onClick={onLoggedin} className="nav-link login" to="/login">{loggedIn ? 'Log in' : 'Log out'}</Link>
+                                <Link onClick={onLoggedin} className="nav-link login" to="/">{loggedIn ? 'Log in' : 'Log out'}</Link>
                             </li>
                         </>
 
@@ -54,7 +54,7 @@ export const Header = () => {
                             </li>
 
                             <li className="nav-item">
-                                <Link onClick={onLoggedin} className="nav-link login"  to="/login">{loggedIn ? 'Log in' : 'Log out'}</Link>
+                                <Link onClick={onLoggedin} className="nav-link login"  to="/">{loggedIn ? 'Log in' : 'Log out'}</Link>
                             </li>
                         </>
 

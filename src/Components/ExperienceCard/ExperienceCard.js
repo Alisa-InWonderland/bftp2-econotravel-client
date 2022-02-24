@@ -4,7 +4,7 @@ import "../ExperienceCatalog/experienceCatalog.css"
 
 
 
-export function ExperienceCard({experience, deleteExperience}) {
+export function ExperienceCard({experience, deleteExperience, loggedIn}) {
 
     const { id, name, image, price, duration, description } = experience;
 
@@ -36,14 +36,14 @@ export function ExperienceCard({experience, deleteExperience}) {
 
 
                                 <tr className='btn-card-container'>
-                                    {/*{loggedIn ?*/}
-                                    {/*    <td>*/}
-                                    {/*        <button className="btn-orange editar">*/}
-                                    {/*            <Link className="btn-orange-link" to="/reserve">Reservar</Link>*/}
-                                    {/*        </button>*/}
-                                    {/*    </td>*/}
-                                    {/*    :*/}
-                                    {/*    <>*/}
+                                    {loggedIn ?
+                                        <td>
+                                            <button className="btn-orange editar">
+                                                <Link className="btn-orange-link" to="/reserve">Reservar</Link>
+                                            </button>
+                                        </td>
+                                        :
+                                        <>
                                             <td>
                                                 <button className="btn-orange editar">
                                                     <Link className="btn-orange-link" to="/add"
@@ -55,16 +55,10 @@ export function ExperienceCard({experience, deleteExperience}) {
                                             onClick={() => deleteExperience(experience.id)}>Borrar</a>
                                             </button>
                                             </td>
-                                    {/*    </>*/}
-                                    {/*}*/}
+                                        </>
+                                    }
                                 </tr>
-                                <tr>
-                                    <td>
-                                    <button className="btn-orange">
-                                        <Link className="btn-orange reservar" to="/reserve">Reservar</Link>
-                                    </button>
-                                    </td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
