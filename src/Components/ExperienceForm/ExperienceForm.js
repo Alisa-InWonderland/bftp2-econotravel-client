@@ -8,7 +8,7 @@ export const ExperienceForm = (props) => {
     let navigate = useNavigate();
 
     const location = useLocation();
-    const  data  = location.state ? location.state.data : null;
+    const data = location.state ? location.state.data : null;
 
     const [datos, setDatos] = useState(data || {
         name: '',
@@ -16,6 +16,7 @@ export const ExperienceForm = (props) => {
         price: null,
         duration: '',
         accessibility: '',
+        payment: '',
         tags: ''
     })
 
@@ -36,7 +37,7 @@ export const ExperienceForm = (props) => {
 
         <section className="experience-form-section">
             <div className="experience-form-wrapper">
-                <h1>{ data ? 'Editar experiencia' : 'Nueva experiencia'}</h1>
+                <h1>{data ? 'Editar experiencia' : 'Nueva experiencia'}</h1>
                 <div className="experience-form-container">
                     <form className="edit-experience-form" onSubmit={enviarDatos} action="">
 
@@ -83,18 +84,28 @@ export const ExperienceForm = (props) => {
                                       onChange={handleInputChange}/>
                         </div>
 
-                        <div className="experience-form-group">
-                            <label htmlFor="">Tags</label>
-                            <input type="text"
-                                   className="experience-form-control"
-                                   onChange={handleInputChange}
-                                   value={datos.tags}
-                                   name="tags"/>
+                        <div className="form-group">
+                            <label htmlFor="">Pago</label>
+                            <textarea value={datos.payment}
+                                      name="payment" id="" cols="50" rows="5"
+                                      className="form-control"
+                                      onChange={handleInputChange}/>
                         </div>
 
+                        <div className="form-group">
+                            <div className="experience-form-group">
+                                <label htmlFor="">Tags</label>
+                                <input type="text"
+                                       className="experience-form-control"
+                                       onChange={handleInputChange}
+                                       value={datos.tags}
+                                       name="tags"/>
+                            </div>
 
-                        <div className="btn-edit-container">
-                            <button type="submit" className="btn-edit">Guardar</button>
+
+                            <div className="btn-edit-container">
+                                <button type="submit" className="btn-edit">Guardar</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -102,7 +113,7 @@ export const ExperienceForm = (props) => {
 
         </section>
 
-    );
+);
 }
 
 

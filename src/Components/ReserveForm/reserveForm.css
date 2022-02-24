@@ -55,7 +55,7 @@
 }
 
 .form-group input:hover {
-    cursor: pointer;
+
     border-style: solid;
     border-width: 2px;
     border-color: #4b7f55;
@@ -74,7 +74,7 @@ textarea, select {
 }
 
 textarea:hover {
-    cursor: pointer;
+
     border-style: solid;
     border-width: 2px;
     border-color: #4b7f55;
@@ -135,4 +135,10 @@ textarea:hover {
 
 .btn-edit:active {
     top: 2px;
+}
+
+@media(max-width: 844px) {
+    .form-section {
+        width: 100%;
+    }
 }
