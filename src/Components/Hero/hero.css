@@ -96,8 +96,14 @@
     justify-items: left;
 }
 
-@media (max-width: 844px) {
+@media (max-width: 1180px) {
     .titles p {
         width: 200%;
+    }
+    .title-decore {
+        position: absolute;
+    }
+    .titles h1 {
+        font-size: 55px;
     }
 }

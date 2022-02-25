@@ -141,3 +141,9 @@ textarea:hover {
 .btn-edit:active {
     top: 2px;
 }
+
+@media(max-width: 844px) {
+    .experience-form-section {
+        width: 100%;
+    }
+}

@@ -13,6 +13,7 @@
     margin-top: 10px;
     padding: 20px;
 }
+
 .contact-card {
     display: flex;
     flex-direction: column;
@@ -27,6 +28,7 @@
     justify-content: center;
 
 }
+
 iframe {
     border-radius: 10px;
 }
@@ -50,13 +52,16 @@ iframe {
     margin-top: 25px;
 
 }
+
 .whatsapp:hover {
     background: #fff;
     color: #57cc99
 }
+
 .linkwp {
     color: #ffffff;
 }
+
 .linkwp:hover {
     color: #57cc99;
 }
@@ -65,12 +70,27 @@ iframe {
     iframe {
         width: fit-content;
     }
+
     .contact-page {
         justify-content: center;
     }
+
     .whatsapp {
         margin-top: 15px;
         margin-bottom: 15px;
     }
 
+}
+@media (min-width: 845px) and (max-width: 1180px) {
+    iframe {
+        width: 100%;
+    }
+
+    .contact-page {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-info {
+        padding-bottom: 15px;
+    }
 }
