@@ -70,4 +70,7 @@
         width: 100%;
         text-align: -webkit-match-parent;
     }
+    .topNavBar-links {
+        gap: 10px;
+    }
 }
