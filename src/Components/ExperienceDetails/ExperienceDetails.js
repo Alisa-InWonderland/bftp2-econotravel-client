@@ -3,8 +3,8 @@ import {Link, useParams} from "react-router-dom";
 import {getExperienceById} from "../../services/getExperienceById";
 import {useEffect, useState} from "react";
 import "./ExperienceDetails.css";
-import "../../assets/mountains_sun_icon.png";
-import "../../assets/mountain-bike.png";
+import mountains from "../../assets/mountains_sun_icon.png";
+import mountainBbike from "../../assets/mountain-bike.png";
 
 
 export const ExperienceDetails = () => {
@@ -39,18 +39,18 @@ export const ExperienceDetails = () => {
                                 <div className="type-container">
                                     <div className="e-place">
                                         <span id="place-type">Tipo</span>
-                                        <img id="place-icon" src="../../assets/mountains_sun_icon.png" alt="place icon"/>
+                                        <img id="place-icon" src={mountains} alt="place icon"/>
                                         <span id="place-name">Montaña</span>
                                     </div>
                                     <div className="e-duration">
                                         <span id="duration">Duración</span>
                                         <span id="duration-time">{experience.duration}</span>
-                                        <span id="duration-length">larga</span>
+                                        <span id="duration-length">Media</span>
                                     </div>
                                     <div className="e-transport">
                                         <span id="transport">Transporte</span>
-                                        <img id="transport-icon" src="../../assets/mountain-bike.png" alt="transport icon"/>
-                                        <span id="transport-name">Bicicleta</span>
+                                        <img id="transport-icon" src={mountainBbike} alt="transport icon"/>
+                                        <span id="transport-name">Bus</span>
                                     </div>
                                 </div>
                                 <div className="a11y-container">
@@ -59,9 +59,6 @@ export const ExperienceDetails = () => {
                                 </div>
                                 <button className="btn-reservation">
                                     <Link className="btn-orange-link" to="/reserve">Reservar</Link>
-                                </button>
-                                <button className="btn-reservation borrar">
-                                    <a className="btn-orange-link" href={experience.payment} target="_blank">Pagar</a>
                                 </button>
 
                             </div>

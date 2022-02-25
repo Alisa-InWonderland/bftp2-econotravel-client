@@ -52,6 +52,7 @@
 }
 
 .titles p {
+    max-width: 480px;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.6;
@@ -63,7 +64,6 @@
     background-color: #FFAA05;
     border: none;
     padding: 6px 10px;
-    margin-left: 5px;
     border-radius: 6px;
 }
 
