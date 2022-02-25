@@ -35,7 +35,7 @@
     background-color: #FFAA05;
     position: absolute;
     top: 50px;
-    left: 585px;
+    right: 0px;
     padding: 10px;
     border-radius: 20px 0 0 20px;
 }
@@ -96,8 +96,8 @@
     padding: 5px;
     background-color: #4b7f55;
     border: black solid 2px;
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     border-radius: 15px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     justify-content: space-evenly;
@@ -123,8 +123,8 @@
     padding: 5px;
     background-color: #E8A136;
     border: black solid 2px;
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     border-radius: 15px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     justify-content: space-evenly;
@@ -148,8 +148,8 @@
     padding: 5px;
     background-color: #4B5A7F;
     border: black solid 2px;
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     border-radius: 15px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     justify-content: space-evenly;
