@@ -1,12 +1,11 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import "./reservesList.css"
 
 export function ReservesList({reservas}) {
 
 
     return (
-
+        <div className="table-container">
         <section className='reservesList'>
                 <h1 className="reservesList-title">Lista de Reservas</h1>
 
@@ -41,6 +40,7 @@ export function ReservesList({reservas}) {
                     </table>
                 </div>
         </section>
+        </div>
     );
 
 }
