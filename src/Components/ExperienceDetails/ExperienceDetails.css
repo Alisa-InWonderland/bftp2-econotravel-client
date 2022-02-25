@@ -108,8 +108,10 @@
 }
 
 #place-icon {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-self: center;
 }
 
 #place-name {
@@ -160,8 +162,10 @@
 }
 
 #transport-icon {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-self: center;
 }
 
 #transport-name {
@@ -190,12 +194,14 @@
 
 .btn-reservation {
     width: 200px;
+    height: 40px;
     background-color: #FFAA05;
     font-family: Volkhov, serif;
     font-size: large;
     font-weight: bold;
     border-radius: 10px;
     border: none;
+    margin-top: 25px;
     margin-bottom: 5px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     align-self: center;
