@@ -148,3 +148,10 @@ textarea:hover {
         width: 100%;
     }
 }
+
+
+@media(min-width: 845px) and (max-width: 1180px) {
+    .section-form-experience {
+        background-position: right;
+    }
+}
