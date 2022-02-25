@@ -75,3 +75,24 @@
     font-size: smaller;
 }
 
+@media (max-width: 1180px){
+    .mission-container {
+        flex-direction: column;
+    }
+    .mission-text-container {
+        width: 100%;
+    }
+    .about-card {
+        padding-top: 0;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .fundadora {
+        width: 70%;
+        align-self: center;
+    }
+    .title {
+        margin: revert;
+        text-align: center;
+    }
+}
