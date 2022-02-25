@@ -33,6 +33,7 @@ export const ReserveForm = (props) => {
             }, (error) => {
                 console.log(error.text);
             });
+        window.open("https://buy.stripe.com/5kAaGC3bKaFB80MaEH", '_blank');
         navigate("/")
     };
 
@@ -118,7 +119,8 @@ export const ReserveForm = (props) => {
 
 
                             <div className="btn-edit-container">
-                                <button type="submit" className="btn-edit"><a className="btn-orange-link" href="https://buy.stripe.com/5kAaGC3bKaFB80MaEH" target="_blank">Reservar y Pagar</a>
+                                <button type="submit" className="btn-edit">
+                                    Reservar y Pagar
                                 </button>
                             </div>
                         </form>

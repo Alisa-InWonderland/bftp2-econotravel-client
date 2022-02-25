@@ -12,6 +12,12 @@
     padding: 20px;
 
 }
+.section-form {
+    display: flex;
+    justify-content: start;
+    background-size: cover;
+    padding: 20px;
+}
 
 .experience-form-section {
     width: 55%;
@@ -38,7 +44,7 @@
 }
 
 .experience-form-group input {
-    width: 60%;
+    width: 55%;
     font-family: 'Poppins', sans-serif;
     height: 25px;
     border-radius: 5px;
@@ -64,7 +70,7 @@ textarea, select {
     padding: 3px;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
-    width: 60%;
+    width: 55%;
     overflow: hidden;
     -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);

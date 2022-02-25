@@ -8,20 +8,18 @@
 .section-form {
     display: flex;
     justify-content: start;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     padding: 20px;
 }
 
 .form-section {
-    width: 55%;
+    width: 45%;
     background-color: #e8a036;
     padding: 20px 20px 2px 20px;
     border-radius: 10px;
     -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
 }
 
 .form-section h1 {
@@ -40,7 +38,7 @@
 }
 
 .form-group input {
-    width: 60%;
+    width: 55%;
     font-family: 'Poppins', sans-serif;
     height: 25px;
     border-radius: 5px;
@@ -66,7 +64,7 @@ textarea, select {
     padding: 3px;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
-    width: 60%;
+    width: 55%;
     overflow: hidden;
     -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
