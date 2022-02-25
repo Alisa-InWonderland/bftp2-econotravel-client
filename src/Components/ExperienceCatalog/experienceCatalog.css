@@ -62,7 +62,7 @@
 
 
 th, td {
-    padding: 4px 8px;
+    padding: 8px;
 }
 td {
     vertical-align: top;
@@ -71,6 +71,7 @@ td {
 .btn-card-container {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 5px;
 }
 
 .editar, .borrar {
@@ -121,6 +122,6 @@ width: 3%;
 }
 
 .btn-orange {
-    padding: 4px 7px;
+    padding: 5px 10px;
 }
 

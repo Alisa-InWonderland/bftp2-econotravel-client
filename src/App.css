@@ -40,7 +40,6 @@ a {
 
 main {
     margin-top: 70px;
-    padding: 0 20px;
     flex-grow: 1;
     z-index: 1;
 }

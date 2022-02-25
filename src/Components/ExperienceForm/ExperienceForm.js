@@ -38,12 +38,15 @@ export const ExperienceForm = (props) => {
         <div className='section-form-experience' style={{backgroundImage: `url(${backgreserve})`}}>
             <section className="experience-form-section">
                 <div className="experience-form-wrapper">
+
                     <h1>{data ? 'Editar experiencia' : 'Nueva experiencia'}</h1>
                     <div className="experience-form-container">
                         <form className="edit-experience-form" onSubmit={enviarDatos} action="">
 
                             <div className="experience-form-group">
-                                <label htmlFor="">Nombre de la experiencia</label>
+                                <label htmlFor="">Nombre de<br/>
+
+                                la experiencia</label>
                                 <input type="text"
                                        className="experience-form-control"
                                        onChange={handleInputChange}
@@ -54,7 +57,7 @@ export const ExperienceForm = (props) => {
                             <div className="experience-form-group">
                                 <label htmlFor="">Descripción</label>
                                 <textarea value={datos.description}
-                                          name="description" id="" cols="50" rows="5"
+                                          name="description" id="" cols="50" rows="4"
                                           className="experience-form-control"
                                           onChange={handleInputChange}/>
                             </div>
@@ -80,20 +83,20 @@ export const ExperienceForm = (props) => {
                             <div className="experience-form-group">
                                 <label htmlFor="">Accesibilidad</label>
                                 <textarea value={datos.accessibility}
-                                          name="accessibility" id="" cols="50" rows="5"
+                                          name="accessibility" id="" cols="50" rows="3"
                                           className="experience-form-control"
                                           onChange={handleInputChange}/>
                             </div>
 
-                            <div className="form-group">
+                            <div className="experience-form-group">
                                 <label htmlFor="">Pago</label>
-                                <textarea value={datos.payment}
+                                <input value={datos.payment}
                                           name="payment" id="" cols="50" rows="5"
                                           className="form-control"
                                           onChange={handleInputChange}/>
                             </div>
 
-                            <div className="form-group">
+
                                 <div className="experience-form-group">
                                     <label htmlFor="">Tags</label>
                                     <input type="text"
@@ -107,7 +110,6 @@ export const ExperienceForm = (props) => {
                                 <div className="btn-edit-container">
                                     <button type="submit" className="btn-edit">Guardar</button>
                                 </div>
-                            </div>
                         </form>
                     </div>
                 </div>

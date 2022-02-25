@@ -7,11 +7,6 @@
 }
 
 
-
-
-
-
-
 .topNavBar {
     width: 100%;
     display: flex;
@@ -20,6 +15,7 @@
 }
 
 .topNavBar-brand {
+    /*margin-left: 30px;*/
     max-width: 80px;
 }
 
@@ -28,7 +24,7 @@
 }
 
 .topNavBar ul {
-    padding-right: 50px;
+   padding-right: 30px;
 
 }
 

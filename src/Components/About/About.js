@@ -9,7 +9,7 @@ export const About = () => {
                 <div className="mission-container">
                     <div className="mission-text-container">
                         <header className="statement">Econotravel: Experiencias en el área de Barcelona</header>
-                        <h1 className="title">- Quiénes somos -</h1>
+                        <h1 className="about-title">- Quiénes somos -</h1>
                         <p className="mission-text">Nuestra empresa se fundó a raíz de un viaje que nuestra fundadora,
                             Marina
                             Herrán, realizó en bicicleta por Cataluña en el verano de 2001. Durante ese periodo,

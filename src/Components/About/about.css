@@ -36,9 +36,8 @@
     margin-bottom: 15px;
 }
 
-.title {
+.about-title {
     font-family: 'Volkhov', serif;
-    font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
@@ -88,7 +87,7 @@
         padding-left: 25px;
     }
     .fundadora {
-        width: 70%;
+        width: 50%;
         align-self: center;
     }
     .title {
