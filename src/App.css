@@ -25,6 +25,13 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 1300px) {
+    .App {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 
 li {
     list-style: none;
