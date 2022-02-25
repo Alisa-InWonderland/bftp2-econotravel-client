@@ -35,7 +35,7 @@ export const ExperienceForm = (props) => {
 
 
     return (
-        <div className='section-form' style={{backgroundImage: `url(${backgreserve})`}}>
+        <div className='section-form-experience' style={{backgroundImage: `url(${backgreserve})`}}>
             <section className="experience-form-section">
                 <div className="experience-form-wrapper">
                     <h1>{data ? 'Editar experiencia' : 'Nueva experiencia'}</h1>

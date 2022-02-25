@@ -12,11 +12,12 @@
     padding: 20px;
 
 }
-.section-form {
+.section-form-experience {
     display: flex;
     justify-content: start;
     background-size: cover;
     padding: 20px;
+    background-position: right;
 }
 
 .experience-form-section {
