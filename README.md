@@ -1,11 +1,5 @@
-# Econotravel client app
+# Link to backend https://github.com/Alisa-InWonderland/bftp2-econotravel-server
 
-Este proyecto sirve para comenzar la aplicación cliente de Econotravel. Estad atentas a las actualizaciones del proyecto!
-
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
